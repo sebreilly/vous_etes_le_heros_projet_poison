@@ -1,0 +1,9 @@
+1: Quel est le genre de mon aventure?
+R: suspense/aventure/action
+
+2: Mes inspirations?
+R: -Films= Speed(1994), Le silence des agneaux(1991)
+   -Jeux-vidéos= Heavy Rain(2010), Detroit:Become Human(2018)
+
+3: Le nom de mon aventure?
+R: Poison
