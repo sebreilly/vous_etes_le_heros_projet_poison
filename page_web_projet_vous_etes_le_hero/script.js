@@ -7,3 +7,8 @@ img: "barreaux.jpg"
 let chapterObj = {
 slug: "nom",
 };
+
+function goToChapter(chapterName) {
+let chapitre = slug;
+console.log(chapitre);
+}
