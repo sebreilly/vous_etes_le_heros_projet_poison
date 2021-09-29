@@ -49,43 +49,43 @@ option: []
 
 let chapitre8 = {
 subtitle: "Le retour",
-text: "Vous devez devez trouver un moyen de vous échaper, mais comment la pièce n'a pas d'issu. Que faîtes-vous?",
+text: "Vous devez devez trouver un moyen de vous échaper, mais comment? La pièce n'a pas d'issu. Que faîtes-vous?",
 img: "mur.jpg",
 option: []
 }
 
 let chapitre9 = {
-subtitle: "La porte",
-text: "Vous vous rendez compte que la porte de de votre cellule est vérouiller. Que faîtes-vous?",
-img: "barreaux.jpg",
+subtitle: "Danger",
+text: "Soudain, vous entendez un bruit provenant de l'escalier. Vous entendez une voix. C'est celle du maniac de la télé. Que faîtes-vous?",
+img: "maniac.jpg",
 option: []
 }
 
 let chapite10 = {
-subtitle: "La porte",
-text: "Vous vous rendez compte que la porte de de votre cellule est vérouiller. Que faîtes-vous?",
-img: "barreaux.jpg",
+subtitle: "À l'attaque!",
+text: "Le maniac voit que vous foncez sur lui. Vous devez choisir judicieusement votre arme. Quelle arme choisissez-vous?",
+img: "armes.jpg",
 option: []
 }
 
 let chapitre11 = {
-subtitle: "La porte",
-text: "Vous vous rendez compte que la porte de de votre cellule est vérouiller. Que faîtes-vous?",
-img: "barreaux.jpg",
+subtitle: "Piéger",
+text: "Vous êtes cacher et le maniac ne vous a pas vu. Cependant vous savez que vous ne pouvez pas rester au même endroit très longtemps. Que faîtes-vous?",
+img: "colonne.jpg",
 option: []
 }
 
 let chapitre12 = {
-subtitle: "La porte",
-text: "Vous vous rendez compte que la porte de de votre cellule est vérouiller. Que faîtes-vous?",
-img: "barreaux.jpg",
+subtitle: "L'indice?",
+text: "Vous cherhez un moyen de vous tirer d'affaire. Avez-vous trouvez?",
+img: "indice.jpg",
 option: []
 }
 
 let chapitre13 = {
-subtitle: "La porte",
-text: "Vous vous rendez compte que la porte de de votre cellule est vérouiller. Que faîtes-vous?",
-img: "barreaux.jpg",
+subtitle: "À l'aide!",
+text: "Le poison l'a affaiblit mais il est toujours debout. Le maniac vous parle:«Hahaha! Tu pensais vraiment me tuer avec ça, ah! Le poison que tu m'a injecter à atteint sa dâte de péremption. Et bien, on dirais bien que tu vas mourir à présent.» Vous essayer de trouver une échapatoire, mais rien ne vous vient en tête. Vous vous rappeler le tueur dans la cuisine. L'aviez-vous tuer?",
+img: "tueur.jpg",
 option: []
 }
 
