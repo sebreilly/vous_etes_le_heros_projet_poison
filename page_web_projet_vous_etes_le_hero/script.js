@@ -61,7 +61,7 @@ img: "maniac.jpg",
 option: []
 }
 
-let chapite10 = {
+let chapitre10 = {
 subtitle: "À l'attaque!",
 text: "Le maniac voit que vous foncez sur lui. Vous devez choisir judicieusement votre arme. Quelle arme choisissez-vous?",
 img: "armes.jpg",
@@ -70,7 +70,7 @@ option: []
 
 let chapitre11 = {
 subtitle: "Piéger",
-text: "Vous êtes cacher et le maniac ne vous a pas vu. Cependant vous savez que vous ne pouvez pas rester au même endroit très longtemps. Que faîtes-vous?",
+text: "Vous êtes caché et le maniac ne vous a pas vu. Cependant vous savez que vous ne pouvez pas rester au même endroit très longtemps. Que faîtes-vous?",
 img: "colonne.jpg",
 option: []
 }
@@ -92,6 +92,18 @@ option: []
 
 let chapterObj = {
 porte: chapitre1,
+corridor: chapitre2,
+eau: chapitre3,
+allée: chapitre4,
+téléphone: chapitre5,
+couteau: chapitre6,
+cachette: chapitre7,
+pièce: chapitre8,
+sanctuaire: chapitre9,
+attaque: chapitre10,
+colonne: chapitre11,
+indice: chapitre12,
+aide: chapitre13
 };
 
 function goToChapter(chapterName) {
