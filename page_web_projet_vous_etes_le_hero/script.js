@@ -1,4 +1,4 @@
-let chapitre1 = {
+let chapter1 = {
 subtitle: "La porte",
 text: "Vous vous rendez compte que la porte de de votre cellule est vérouiller. Que faîtes-vous?",
 img: "barreaux.jpg",
@@ -11,7 +11,7 @@ option: [ fenetre = {
 }]
 };
 
-let chapitre2 = {
+let chapter2 = {
 subtitle: "Le corridor",
 text: "Vous vous retrouver au millieu d'un corridor, vous ne savez pas quelle direction prendre. Que se passe t'il?",
 img: "corridor.jpg",
@@ -24,7 +24,7 @@ option: [ oui = {
 }] 
 }
 
-let chapitre3 = {
+let chapter3 = {
 subtitle: "L'eau",
 text: "Vous vous rendez compte que le corridor se remplit d'eau. Vous devez agir rapidement. Que faîtes-vous?",
 img: "eau.jpg",
@@ -40,7 +40,7 @@ option: [ droite = {
 }]
 }
 
-let chapitre4 ={
+let chapter4 ={
 subtitle: "Le corridor 2.0",
 text: "Vous devez trouver une sortie. Il est temps de prendre une décition. Quel direction prenez-vous?",
 img: "corridor.jpg",
@@ -53,7 +53,7 @@ option: [ droite = {
 }]
 }
 
-let chapitre5 = {
+let chapter5 = {
 subtitle: "La figure",
 text: "Un téléphone se met à sonner. Vous décrocher l'apreile et prenez la ligne. Au bout du fil quelqu'un vous parle: « Vous êtes la cible d'une expérience humaine. Si vous voulez survivre, je vous conseil vivement de vous trouver une arme. Nous nous reverons, à vous de décider dans quelle circonstance. Bonne chance.» Vous trouvez ça étrange. Que faîtes-vous?",
 img: "telephone.jpg",
@@ -66,7 +66,7 @@ option: [ raccroché = {
 }]
 }
 
-let chapitre6 = {
+let chapter6 = {
 subtitle: "L'éthique",
 text: "Après avoir blessé l'homme qui a éssayer de vous tuer, vous lui prenez son arme. Vous devez prendre une décition crucial. Que faîtes-vous?",
 img: "couteau.jpg",
@@ -82,7 +82,7 @@ option: [ assomer = {
 }]
 }
 
-let chapitre7 = {
+let chapter7 = {
 subtitle: "cache-cache",
 text: "Vous devez trouver un endroit pour vous cacher et vite. Où vous cachez-vous",
 img: "cachette.jpg",
@@ -95,7 +95,7 @@ option: [ bar = {
 }]
 }
 
-let chapitre8 = {
+let chapter8 = {
 subtitle: "Le retour",
 text: "Vous devez devez trouver un moyen de vous échaper, mais comment? La pièce n'a pas d'issu. Que faîtes-vous?",
 img: "mur.jpg",
@@ -111,7 +111,7 @@ option: [ rebrousser_chemin = {
 }]
 }
 
-let chapitre9 = {
+let chapter9 = {
 subtitle: "Danger",
 text: "Soudain, vous entendez un bruit provenant de l'escalier. Vous entendez une voix. C'est celle du maniac de la télé. Que faîtes-vous?",
 img: "maniac.jpg",
@@ -124,7 +124,7 @@ option: [ attaquer = {
 }]
 }
 
-let chapitre10 = {
+let chapter10 = {
 subtitle: "À l'attaque!",
 text: "Le maniac voit que vous foncez sur lui. Vous devez choisir judicieusement votre arme. Quelle arme choisissez-vous?",
 img: "armes.jpg",
@@ -140,7 +140,7 @@ option: [ couteau = {
 }]
 }
 
-let chapitre11 = {
+let chapter11 = {
 subtitle: "Piéger",
 text: "Vous êtes caché et le maniac ne vous a pas vu. Cependant vous savez que vous ne pouvez pas rester au même endroit très longtemps. Que faîtes-vous?",
 img: "colonne.jpg",
@@ -153,7 +153,7 @@ option: [ cailloux = {
 }]
 }
 
-let chapitre12 = {
+let chapter12 = {
 subtitle: "L'indice?",
 text: "Vous cherhez un moyen de vous tirer d'affaire. Avez-vous trouvez?",
 img: "indice.jpg",
@@ -166,7 +166,7 @@ option: [ non = {
 }]
 }
 
-let chapitre13 = {
+let chapter13 = {
 subtitle: "À l'aide!",
 text: "Le poison l'a affaiblit mais il est toujours debout. Le maniac vous parle:«Hahaha! Tu pensais vraiment me tuer avec ça, ah! Le poison que tu m'a injecter à atteint sa dâte de péremption. Et bien, on dirais bien que tu vas mourir à présent.» Vous essayer de trouver une échapatoire, mais rien ne vous vient en tête. Vous vous rappeler le tueur dans la cuisine. L'aviez-vous tuer?",
 img: "tueur.jpg",
@@ -179,20 +179,20 @@ option: [ oui = {
 }]
 }
 
-let chapterObj = {
-porte: chapitre1,
-corridor: chapitre2,
-eau: chapitre3,
-allée: chapitre4,
-téléphone: chapitre5,
-couteau: chapitre6,
-cachette: chapitre7,
-pièce: chapitre8,
-sanctuaire: chapitre9,
-attaque: chapitre10,
-colonne: chapitre11,
-indice: chapitre12,
-aide: chapitre13
+let chaptersObj = {
+porte: chapter1,
+corridor: chapter2,
+eau: chapter3,
+allée: chapter4,
+téléphone: chapter5,
+couteau: chapter6,
+cachette: chapter7,
+pièce: chapter8,
+sanctuaire: chapter9,
+attaque: chapter10,
+colonne: chapter11,
+indice: chapter12,
+aide: chapter13,
 };
     
 
