@@ -1,206 +1,595 @@
-let chapter1 = {
-subtitle: "La porte",
-text: "Vous vous rendez compte que la porte de de votre cellule est vérouiller. Que faîtes-vous?",
-img: "barreaux.jpg",
-option: [ fenetre = {
-    text: "Examiner la fenetre. Vous remarquer un petit cailloux qui s'y trouve. Vous décidez d'utiliser le cailloux pour forcer l'ouverture de la porte, cependant vous déclanché une alarme.",
-    action: 'goToChapter(corridor)'
-}, faille = {
-    text: "Examiner la faille dans le mur. Vous remarquer un petit objet qui brille. Vous le ramasser et vous rendez compte que c'est un trombone avec une étrange forme. Vous éssayez d'ouvrir la porte avec le trombone. Ça fonctionne.",
-    action: 'goToChapter(corridor)'
-}]
-};
-
-let chapter2 = {
-subtitle: "Le corridor",
-text: "Vous vous retrouver au millieu d'un corridor, vous ne savez pas quelle direction prendre. Que se passe t'il?",
-img: "corridor.jpg",
-option: [ oui = {
-    text: "le corridor se remplit d'eau.",
-    action: 'goToChapter(eau)'
-}, non = {
-    text: "Vous n'avez pas déclancher l'alarme et donc les écluves ne se sont pas ouvertes.",
-    action: 'goToChapter(allée)'
-}] 
-}
-
-let chapter3 = {
-subtitle: "L'eau",
-text: "Vous vous rendez compte que le corridor se remplit d'eau. Vous devez agir rapidement. Que faîtes-vous?",
-img: "eau.jpg",
-option: [ droite = {
-    text: "Vous allez à droite, mais vous vous rendez compte très vite que la direction que vous avez pris n'a pas d'issus. On vous attrape par dérière et on vous tu.",
-    action: 'goToChapter(porte)'
-}, gauche = {
-    text: "Vous allez à gauche, mais vous vous rendez compte très vite que la direction que vous avez pris n'a pas d'issus. On vous attrape par dérière et on vous tu.",
-    action: 'goToChapter(porte)'
-}, monter = {
-    text: "Vous remarquez une trappe au plafond. Vous vous laissez floter jusqu'à la trappe et vous l'ouvrez.",
-    action: 'goToChapter(téléphone)'
-}]
-}
-
-let chapter4 ={
-subtitle: "Le corridor 2.0",
-text: "Vous devez trouver une sortie. Il est temps de prendre une décition. Quel direction prenez-vous?",
-img: "corridor.jpg",
-option: [ droite = {
-    text: "Vous allez à droite, mais vous vous rendez compte très vite que la direction que vous avez pris n'a pas d'issus. On vous attrape par dérière et on vous tu.",
-    action: 'goToChapter(porte)'
-}, gauche = {
-    text: "Vous allez à gauche, mais vous vous rendez compte très vite que la direction que vous avez pris n'a pas d'issus. On vous attrape par dérière et on vous tu.",
-    action: 'goToChapter(porte)'
-}]
-}
-
-let chapter5 = {
-subtitle: "La figure",
-text: "Un téléphone se met à sonner. Vous décrocher l'apreile et prenez la ligne. Au bout du fil quelqu'un vous parle: « Vous êtes la cible d'une expérience humaine. Si vous voulez survivre, je vous conseil vivement de vous trouver une arme. Nous nous reverons, à vous de décider dans quelle circonstance. Bonne chance.» Vous trouvez ça étrange. Que faîtes-vous?",
-img: "telephone.jpg",
-option: [ raccroché = {
-    text: "Vous décidez de raccroché la ligne au nez. Vous vous dirigé vers une porte, mais elle est vérouillé. Vous vous retournez et au même moment, quelqu'un vous tire dessus. Vous mourez rapidement.",
-    action: 'goToChapter(téléphone)'
-}, écouter = {
-    text: "Vous décider de l'écouter et de prendre un couteau à proximité. Vous vous retourner et au même monment un homme rentre dans la pièce munit d'une arme à feu. Vous décidez de poignardé l'homme. Vous arrivé à le blesser assez pour qu'il tombe par terre.",
-    action: 'goToChapter(couteau)'
-}]
-}
-
-let chapter6 = {
-subtitle: "L'éthique",
-text: "Après avoir blessé l'homme qui a éssayer de vous tuer, vous lui prenez son arme. Vous devez prendre une décition crucial. Que faîtes-vous?",
-img: "couteau.jpg",
-option: [ assomer = {
-    text: "Vous décider de lui épargner la vie en l'assomant. Vous remarquer un objet dépassant de sa poche. Vous fouillez l'homme et dévrez un tournevis. Vous décidez de l'utiliser pour dévisser la poignée de porte. Vous y arrivez et sortez de la pièce. Vous vous retrouvez dans une chambre froide. Une télé catodique s'allume. Vous reconnaisser immédiatement le maniac au téléphone. Il vous parle:« Bravo continu comme ça et tu aura même le droit de m'affronté. Pour l'instant trouve la sortie ma belle petite souris».",
-    action: 'goToChapter(pièce)'
-}, tuer = {
-    text: "Vous décider qu'il est trop dangereux pour votre survie et vous le poignardé à mort.Vous remarquer un objet dépassant de sa poche. Vous fouillez l'homme et dévrez un tournevis. Vous décidez de l'utiliser pour dévisser la poignée de porte. Vous y arrivez et sortez de la pièce. Vous vous retrouvez dans une chambre froide. Une télé catodique s'allume. Vous reconnaisser immédiatement le maniac au téléphone. Il vous parle:« Bravo continu comme ça et tu aura même le droit de m'affronté. Pour l'instant trouve la sortie ma belle petite souris».",
-    action: 'goToChapter(pièce)'
-}, ouvrire_la_porte = {
-    text: "Vous essayer d'ouvrir une porte et vous déboucher dans une salle à manger. Vous regarder autour de vous et vous ne voyez rien de suspect.",
-    action: 'goToChapter(cachette)'
-}]
-}
-
-let chapter7 = {
-subtitle: "cache-cache",
-text: "Vous devez trouver un endroit pour vous cacher et vite. Où vous cachez-vous",
-img: "cachette.jpg",
-option: [ bar = {
-    text: "Vous décider de vous cacher dérière le bar. Maleureusement pour vous, le tueur débarque dans la pièce. Il vous voit et vous tu.",
-    action: 'goToChapter(couteau)'
-}, table = {
-    text: "Vous décider de vous cacher sous la table.Maleureusement pour vous, le tueur débarque dans la pièce. Il vous voit et vous tu.",
-    action: 'goToChapter(couteau)'
-}]
-}
-
-let chapter8 = {
-subtitle: "Le retour",
-text: "Vous devez devez trouver un moyen de vous échaper, mais comment? La pièce n'a pas d'issu. Que faîtes-vous?",
-img: "mur.jpg",
-option: [ rebrousser_chemin = {
-    text: "Vous décider de revenir sur vos pas, mais à la seconde où vous franchissez la porte, toutes les pièces prennent en feu et vous aussi par le fait même. Vous mourez dans d'atroces souffrances.",
-    action: 'goToChapter(pièce)'
-}, cadavre = {
-    text: "Vous remarquer un cadavre allonger au sol. Vous décidez de le fouiller et vous tomber sur une enveloppe. Vous vous dîtes que l'enveloppe ne vous était pas destiner et vous ne l'ouvrez pas.Vous remarquer que vos mains sont couvert de sang. Au même monent vous appercevez un évier. Vous décider d'ouvrir le robinet pour faire couller l'eau. Au même moment un des murs s'ouvre permettant l'accès à un excalier. Vous décider de l'emprunter et vous vous retrouver dans un sanctuaire. Au bout de ce sanctuaire se dresse une immense porte, mais essayant de l'ouvrir vous vous rendez compte qu'elle est scellée.",
-    action: 'goToChapter(sanctuaire)'
-}, évier = {
-    text: "Vous remarquer que vos mains sont couvert de sang. Au même monent vous appercevez un évier. Vous décider d'ouvrir le robinet pour faire couller l'eau. Au même moment un des murs s'ouvre permettant l'accès à un excalier. Vous décider de l'emprunter et vous vous retrouver dans un sanctuaire. Au bout de ce sanctuaire se dresse une immense porte, mais essayant de l'ouvrir vous vous rendez compte qu'elle est scellée.",
-    action: 'goToChapter(sanctuaire)'
-}]
-}
-
-let chapter9 = {
-subtitle: "Danger",
-text: "Soudain, vous entendez un bruit provenant de l'escalier. Vous entendez une voix. C'est celle du maniac de la télé. Que faîtes-vous?",
-img: "maniac.jpg",
-option: [ attaquer = {
-    text: "Vous décider qu'il vaut mieux l'attaquer et en finir avec lui.",
-    action: 'goToChapter(attaque)'
-}, cacher = {
-    text: "Vous décider qu'il vaut mieux se cacher, car il vous semble trop imprévisible.",
-    action: 'goToChapter(colonne)'
-}]
-}
-
-let chapter10 = {
-subtitle: "À l'attaque!",
-text: "Le maniac voit que vous foncez sur lui. Vous devez choisir judicieusement votre arme. Quelle arme choisissez-vous?",
-img: "armes.jpg",
-option: [ couteau = {
-    text: "Vous choisiez de l'attaquer avec le couteau, mais il vous désarme et vous tu avec votre propre arme",
-    action: 'goToChapter(sanctuaire)'
-}, tournevis = {
-    text: "Vous choisiez de l'attaquer avec le tournevis, mais il vous désarme et vous tu avec votre propre arme",
-    action: 'goToChapter(sanctuaire)'
-}, fusil = {
-    text: "Vous choisiez de l'attaquer avec votre arme à feu, mais il vous désarme et vous tu avec votre propre arme",
-    action: 'goToChapter(sanctuaire)'
-}]
-}
-
-let chapter11 = {
-subtitle: "Piéger",
-text: "Vous êtes caché et le maniac ne vous a pas vu. Cependant vous savez que vous ne pouvez pas rester au même endroit très longtemps. Que faîtes-vous?",
-img: "colonne.jpg",
-option: [ cailloux = {
-    text: "Vous vous rappeler que vous avez un cailloux sur vous. Vous décidez de le lancer pour créer une diversion. Pendant que son attention est ailleurs, vous décider de courir vers l'escalier d'où vous venez, mais vous vous rendez compte très vite que le passage s'est refermer. Vous vous retourner et au même moment le maniac se tiens devant vous. Vous vous faîtes poignarder jusqu'à temps que vous perdez connaissance et vous mourez.",
-    action: 'goToChapter(sanctuaire)'
-}, réfléchir = {
-    text: "Vous savez que le maniac ne tardera pas à vous trouver, mais vous prenez quand même un temps pour réfléchir.",
-    action: 'goToCahpter(indice)'
-}]
-}
-
-let chapter12 = {
-subtitle: "L'indice?",
-text: "Vous cherhez un moyen de vous tirer d'affaire. Avez-vous trouvez?",
-img: "indice.jpg",
-option: [ non = {
-    text: "Vous n'avez rien sur vous vous permettant d'avoir l'avantage sur lui. Vous prenez trop de temps à réfléchir et par conséquent il vous trouve. Vous vous faîtes poignarder jusqu'à temps que vous perdez connaissance et vous mourez.",
-    action: 'goToChapter(sanctuaire)'
-}, oui = {
-    text: "Vous vous rappeler l'enveloppe que vous aviez prise. Vous n'avez aucune autre solution, donc vous ouvrez l'enveloppe et remarquer un mot ainsi qu'une seringue remplit d'un certain composé. Vous lisez le mot: « Il m'a trouver. Je ne sais pas combien de temps il me reste à vivre. J'ai mis dans cette enveloppe une seringue remplit d'un poison assez puissant pour le tuer. J'espère que ceci aidera de futurs victimes de cet homme. Il ne doit pas s'en sortir.» Vous maintenant avez l'avantage sur lui. Vous décider d'attaquer le maniac avec le poison.",
-    action: 'goToChapter(aide)'
-}]
-}
-
-let chapter13 = {
-subtitle: "À l'aide!",
-text: "Le poison l'a affaiblit mais il est toujours debout. Le maniac vous parle:«Hahaha! Tu pensais vraiment me tuer avec ça, ah! Le poison que tu m'a injecter à atteint sa dâte de péremption. Et bien, on dirais bien que tu vas mourir à présent.» Vous essayer de trouver une échapatoire, mais rien ne vous vient en tête. Vous vous rappeler le tueur dans la cuisine. L'aviez-vous tuer?",
-img: "tueur.jpg",
-option: [ oui = {
-    text: "Maleureusemant pour vous, vous avez tuer le seul homme capable de mettre fin au jour du maniac. Vous vous faîtes poignarder jusqu'à temps que vous perdez connaissance et vous mourez.",
-    action: 'goToChapter(porte)'
-}, non = {
-    text: "Le tueur de la cuisine sors des ombres et poignarde le maniac avec une lamme empoisonée. Il vous demande pardon et vous remerci de l'avaoir épargner. Il croyait que vous étiez le maniac. Vous sortez tous les deux sains et saufs",
-    action: 'goToChapter(porte)'
-}]
-}
-
 let chaptersObj = {
-porte: chapter1,
-corridor: chapter2,
-eau: chapter3,
-allée: chapter4,
-téléphone: chapter5,
-couteau: chapter6,
-cachette: chapter7,
-pièce: chapter8,
-sanctuaire: chapter9,
-attaque: chapter10,
-colonne: chapter11,
-indice: chapter12,
-aide: chapter13,
+chapitre1: {
+    subtitle: "Le réveil",
+    text: "Vous vous réveillez dans une cellule. Vous êtes confus et vous vous demandez comment vous êtes arrivé là. Vous vous levez et vous dirigez vers la porte de la cellule.",
+    img: "reveil.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre2')"
+        }
+    ]
+},
+chapitre2: {
+    subtitle: "Le vérou",
+    text: "Vous remarquez que la porte de votre cellule est vérouillée. Vous devez réfléchir rapidement, que faîtes vous?",
+    img: "barreaux.jpg",
+    option: [
+        {
+            text: "Examiner la fenêtre",
+            action: "goToChapter('chapitre3')"
+        },
+        {
+            text: "Examiner la faille dans le mur",
+            action: "goToChapter('chapitre9')"
+        }
+    ]
+},
+chapitre3: {
+    subtitle: "Le caillou",
+    text: "Vous décidez d'examiner la fenêtre en haut de votre lit. Vous y trouvé un caillou.",
+    img: "roche.png",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre4')"
+        }
+    ]
+},
+chapitre4: {
+    subtitle: "L'échapée",
+    text: "Vous retournez à la porte de votre cellule et vous brisez le vérou de la porte.",
+    img: "cellule.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre5')"
+        }
+    ]
+},
+chapitre5: {
+    subtitle: "Le corridor",
+    text: "Vous sortez de votre cellule. Vous vous retrouvez dans un corridor.",
+    img: "corridor.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre6')" 
+        }
+    ]
+},
+chapitre6: {
+    subtitle: "Quel chemin?",
+    text: "Vous décider de rejoindre le centre du corridor. Vous ne pouvez pas rester une minute de plus dans cet endroit, mais quel chemin prendre?",
+    img: "corridor.jpg",
+    option: [
+        {
+            text: "Oui",
+            action: "goToChapter('chapitre7')"
+        },
+        {
+            text: "Non",
+            action: "goToChapter('chapitre11')"
+        }
+    ]
+},
+chapitre7: {
+    subtitle: "Vite de l'eau",
+    text: "Tout d'un coup, une alarme se déclenche. Vous vous rendez compte que le corridor commence à se remplir d'eau. Vite! Prenez une direction.",
+    img: "eau.jpg",
+    option: [
+        {
+            text: "Droite",
+            action: "goToChapter('chapitre8')" 
+        },
+        {
+            text: "Gauche",
+            action: "goToChapter('chapitre8')"  
+        },
+        {
+            text: "Monter vers le plafond",
+            action: "goToChapter('chapitre8')"
+        }
+    ]
+},
+chapitre8: {
+    subtitle: "Cul de sac",
+    text: "Vous arrivez au bout du corridor. Vous tournez le coin et vous vous rendez compte de votre erreur. Trop tard on vous poignarde à mort dans votre dos.",
+    img: "poignard.jpg",
+    option: [
+        {
+            text: "Recommencer",
+            action: "goToChapter('chapitre1')"
+        }
+    ]
+},
+chapitre9: {
+    subtitle: "La faille",
+    text: "Vous remarquez une faille dans le mur longeant votre cellule. Vous vous rapprocher de celle-ci et vous y remarquez un petit objet. En le ramassant, vous découvrez qu'il s'agit d'un trombone.",
+    img: "trombone.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre10')"
+        }
+    ]
+},
+chapitre10: {
+    subtitle: "Un étrange clé",
+    text: "Vous remarquez que le trombone a une étrange forme. Vous décidez de retourner à la porte de votre cellule. Vous insérer le trombone dans la serrure de la porte. Miracle! C'est dévérouillé!",
+    img: "cellule.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre6')"
+        }
+    ]
+},
+chapitre11: {
+    subtitle: "Pour vrai! Quel chemin?",
+    text: "Vous réfléchissez trop! Quel chemin allez-vous prendre?",
+    img: "corridor.jpg",
+    option: [
+        {
+            text: "Droite",
+            action: "goToChapter('chapitre8')"
+        },
+        {
+            text: "Gauche",
+            action: "goToChapter('chapitre8')" 
+        }
+    ]
+},
+chapitre12: {
+    subtitle: "La trappe",
+    text: "Vous remarquez de la lumière venant du plafond. En vous situant en dessous de la source lumineuse, vous remarquez une trappe au plafond. Vous décidez de vous laisser floter jusqu'à pouvoir l'ateindre.",
+    img: "trappe.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre13')"
+        }
+    ]
+},
+chapitre13: {
+    subtitle: "Sorti?",
+    text: "Vous ouvrez la trappe au plafond. Vous vous retrouvez dans une étrange cuisine.",
+    img: "cuisine.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre14')"
+        }
+    ]
+},
+chapitre14: {
+    subtitle: "Le téléphone",
+    text: "Tout à coup, un téléphone se met a sonner. Vous trouvez ça louche, mais vous décidez quand même de décrocher la ligne.",
+    img: "telephone.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre15')"
+        }
+    ]
+},
+chapitre15: {
+    subtitle: "Qui à l'appareil?",
+    text: "Une voix masculine se met à vous parlez. « Félicitation, tu as passer la première épreuve, mais gare à toi car la prochaine fois je ne serai peut-être pas d'aussi bonne humeur. Puisque c'est ta première fois, je vais te donner un indice. Prend le couteau.» Que faîtes-vous?",
+    img: "telephone.jpg",
+    option: [
+        {
+            text: "Raccrocher",
+            action: "goToChapter('chapitre16')"
+        },
+        {
+            text: "L'écouter",
+            action: "goToChapter('chapiter19')"
+        }
+    ]
+},
+chapitre16: {
+    subtitle: "Un fou",
+    text: "Vous décidé de ne pas lui faire confiance et vous lui raccroché au nez.",
+    img: "téléphone.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre17')"
+        }
+    ]
+},
+chapitre17: {
+    subtitle: "Une issu?",
+    text: "Vous remarquez une porte à votre droite. Vous vous précipitez vers elle, mais elle est barricadée.",
+    img: "porte.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre18')"
+        }
+    ]
+},
+chapitre18: {
+    subtitle: "Le jour de la marmotte",
+    text: "Vous vous retourner et tomber nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec une arme à feu. Avant même que vous ayez le temps de comprendre, vous vous faîtes tirer dessus à plusieurs reprises jusqu'à ce que vous sucombez à vos blessures.",
+    img: "gun.jpg",
+    option: [
+        {
+            text: "Recommencer",
+            action: "goToChapter('chapitre13')"
+        }
+    ]
+},
+chapitre19: {
+    subtitle: "Un conseil",
+    text: "Vous décidez d'écoutez cet homme étrange et vous attrapez le premier couteau que vous voyez.",
+    img: "couteau.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre20')"  
+        }
+    ]
+},
+chapitre20: {
+    subtitle: "Le jour de la marm...Quoi?",
+    text: "Vous vous retournez et tombez nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec un arme à feu. Avant même qu'il puisse faire quoi que se soit, vous le poignardez dans la cuisse et évitez de justesse de vous faire tirer dessus.",
+    img: "gun.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre21')"  
+        }
+    ]
+},
+chapitre21: {
+    subtitle: "Un choix difficile",
+    text: "Pendant que l'individu est à terre, vous en profiter pour lui prendre son arme. Q'aller vous faire?",
+    img: "fusil.jpg",
+    option: [
+        {
+            text: "Essayer d'ouvrir une porte",
+            action: "goToChapter('chapitre22')"
+        },
+        {
+            text: "L'assomer",
+            action: "goToChapter('chapitre25')"
+        },
+        {
+            text: "Le tuer",
+            action: "goToChapter('chapitre25')"
+        }
+    ]
+},
+chapitre22: {
+    subtitle: "Trop difficile",
+    text: "Vous n'arrivez pas à prendre une décision. Vous décidez donc de fuire en direction d'une porte à votre gauche. Vous vous retrouvez dans une salle à manger.",
+    img: "resto.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre23')"
+        }
+    ]
+},
+chapitre23: {
+    subtitle: "Cache-cache",
+    text: "Vous regardez rapidement autours de vous. Vous devez trouvez un endroit où vous cacher avant que l'individu vous rattrappe.",
+    img: "cachette.jpg",
+    option: [
+        {
+            text: "Derière le bar",
+            action: "goToChaspter('chapitre24')"
+        },
+        {
+            text: "Sous une table",
+            action: "goToChaspter('chapitre24')"
+        }
+    ]
+},
+chapitre24: {
+    subtitle: "Trouvé!",
+    text: "Vous avez mal choisi votre cachette. L'agresseur vous rattrappe et sous le coup de la peur vous figez et il vous tu violemment à coups de poings.",
+    img: "poing.jpg",
+    option:[
+        {
+            text: "Recommencer",
+            action: "goToChapter('chapitre13')"
+        }
+    ]
+},
+chapitre25: {
+    subtitle: "La moral",
+    text: "Malgré qu'il a éssayé de vous tuer, vous avez pitié de lui et vous décider de l'assomer. Votre agresseur tombe dans les pommes. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter.",
+    img: "poing2.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre27')"
+        }
+    ]
+},
+chapitre26: {
+    subtitle: "Neutralisé",
+    text: "Vous prenez la décision de le tuer avec sa propre arme. De toute façon c'était lui ou vous. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter. ",
+    img: "suprime.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre27')"
+        }
+    ]
+},
+chapitre27: {
+    subtitle: "Un outil merveilleux",
+    text: "Vous arrivez à une porte barricader, pas de soucis! À l'aide du tournevis, vous dévisser la poignée de porte et vous voilà passer.",
+    img: "porte.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre28')"
+        }
+    ]
+},
+chapitre28: {
+    subtitle: "Chambre froide",
+    text: "Vous vous retrouvez dans une pièce s'apparentant à une chambre froide. S'est alors qu'une vielle télévision s'allume. Une silouhette apparaît dans l'écran. C'est l'homme qui vous a parler plus tôt. « Je vois que tu as suivit mon conseil. Très bien ! Cependant j'ai bien peur que le jeu doit s'arrêter ici. Pas d'issu cette fois. Hahaha hahaha ah ! Je vais m'occuper de toi convenablement. En attendant, éssais de trouver une sortie. Ça n'en sera que plus excitant quand nous nous rencontrerons! À très bientôt. Hahaha hahaha hahaha...»",
+    img: "tv.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre29')"
+        }
+    ]
+},
+chapitre29: {
+    subtitle: "Cerné",
+    text: "Quel sadique ! Vous décidez toute fois de l'écouter et de chercher une issue.",
+    img: "mur.jpg",
+    option: [
+        {
+            text: "Rebrousser chemin",
+            action: "goToChapter('chapitre30')"
+        },
+        {
+            text: "Fouiller le cadavre",
+            action: "goToChapter('chapitre31')"
+        },
+        {
+            text: "Examiner l'évier",
+            action: "goToChapter('chapitre32')"
+        }
+    ]
+},
+chapitre30: {
+    subtitle: "Retour en arrière",
+    text: "Ne voyant rien d'intéressant dans cette pièce et ne savant pas quoi faire, vous décidez de rebrousser chemin. Quelle erreur de votre part car une énorme explosion se déclenche et met feu à toute la pièce. Vous mourez dans d'atroces souffrances.",
+    img: "feu.jpg",
+    option: [
+        {
+            text: "Recommencer",
+            action: "goToChapter('chapitre28')"
+        }
+    ]
+},
+chapitre31: {
+    subtitle: "Un indice mortel",
+    text: "En examinant bien la pièce, vous remarquez les reste d'un cadavre couché sur sol. En vous approchant de lui, vous remarquez qu'il détient une enveloppe dans sa main.",
+    img: "os.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre32')"
+        }
+    ]
+},
+chapitre32: {
+    subtitle: "Le robinet",
+    text: "Vous remarquez une évier dans le coin de la pièce. Ça tombe assez bien car vous avez soif. Vous ouvrez le robinet et vous abreuvez.",
+    img: "boire.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre33')"
+        }
+    ]
+},
+chapitre33: {
+    subtitle: "Passage secret",
+    text: "Au même moment un passage s'ouvre sur votre gauche donnant accès à un escalier. Vous ne perdez pas une minute de plus et descendez l'escalier.",
+    img: "escalier.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre34')"
+        }
+    ]
+},
+chapitre34: {
+    subtitle: "Le sanctuaire",
+    text: "Vous vous retrouvez dans une sorte de sanctuaire sacrificiel. En regardant devant vous, vous remarquer une immense porte.",
+    img: "royal.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre35')"
+        }
+    ]
+},
+chapitre35: {
+    subtitle: "Ouvre toi!",
+    text: "Vous essayez de l'ouvrir, mais c'est peine perdu. Celle-ci semble fermée depuis plusieurs années.",
+    img: "royal.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre36')"
+        }
+    ]
+},
+chapitre36: {
+    subtitle: "Le maniac",
+    text: "Tout à coups, vous entendez des murmurs venat de l'escalier. C'est lui, c'est le fou de la télé.",
+    img: "maniac.jpg",
+    option: [
+        {
+            text: "L'attaquer",
+            action: "goToChapter('chapitre37')"
+        },
+        {
+            text: "Se cacher derière une colonne",
+            action: "goToChapter('chapitre39')"
+        }
+    ]
+},
+chapitre37: {
+    subtitle: "À l'attaque!",
+    text: "Vous ne réfléchissez plus! Vous foncer tête première sur lui. Cependant avec quoi l'attaquer?",
+    img: "barreaux.jpg",
+    option: [
+        {
+            text: "L'arme à feu",
+            action: "goToChapter('chapitre38')"
+        },
+        {
+            text: "Le tournevis",
+            action: "goToChapter('chapitre38')"
+        },
+        {
+            text: "Le couteau",
+            action: "goToChapter('chapitre38')"
+        }
+    ]
+},
+chapitre38: {
+    subtitle: "Mauvaise idée",
+    text: "C'était une très mauvaise idée de l'attaquer tête baissée. Il vous désarme facillement et vous tu avec votre propre arme.",
+    img: "crane.jpg",
+    option: [
+        {
+            text: "Recommencer",
+            action: "goToChapter('chapitre33')"
+        }
+    ]
+},
+chapitre39: {
+    subtitle: "Aux abris!",
+    text: "Vous vous cachez derière une colonne dans l'espoire qu'il ne vous remarque pas. Vous réfléchissez à une façon de vous sortir de là.",
+    img: "colonne.jpg",
+    option: [
+        {
+            text: "Lancer une roche",
+            action: "goToChapter('chapitre40')"
+        },
+        {
+            text: "Réfléchir",
+            action: "goToChapter('chapitre42')"
+        }
+    ]
+},
+chapitre40: {
+    subtitle: "La roche",
+    text: "Vous retrouver la roche qui vous a servit plus tôt. Vous décider de la lancer pour créer une diversion.",
+    img: "roche.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre41')"
+        }
+    ]
+},
+chapitre41: {
+    subtitle: "Remonter",
+    text: "Vous courez en direction de l'escalier dans l'espoire de vous échapper. En arrivant en haut de l'escalier, vous remarquez que le passage est refermé. Vous vous retournez et il est là, juste devant vous. Il vous prend et vous pousse dans l'escalier. Vous faite une descente mortelle en vous brisant la nuque.",
+    img: "escalier2.jpg",
+    option: [
+        {
+            text: "Recommencer",
+            action: "goToChapter('chapitre36')"
+        }
+    ]
+},
+chapitre42: {
+    subtitle: "Remus méninge",
+    text: "Vous éssayez tant bien que mal de trouver une solution.",
+    img: "oeil.jpg",
+    option: [
+        {
+            text: "Oui",
+            action: "goToChapter('chapitre43')"
+        },
+        {
+            text: "Non",
+            action: "goToChapter41"
+        }
+    ]
+},
+chapitre43: {
+    subtitle: "L'indice",
+    text: "Vous sortez l'indice que vous avez préalablement obtenu sur le cadavre. Vous le lisez.«Si vous lisez ceci c'est que je ne suis déjà plus de ce monde. Cependant j'ai trouvé le point faible de ce psychopate. Prenez la seringue ci-jointe à ce message. Elle contient juste assez d'un poison pour pouvoir le neutraliser. Je vous en conjure, éléminer le ! Il ne doit pas s'en sortir.»",
+    img: "poison.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre44')"
+        }
+    ]
+},
+chapitre44: {
+    subtitle: "Confrontation",
+    text: "Vous sortez de votre cachete et vous vous dirigez vers lui. Il vous remarque, mais il est trop tard! La seringue est déjà insérée dans son torse.",
+    img: "globule.jpg",
+    option: [
+        {
+            text: "Continuer",
+            action: "goToChapter('chapitre45')"
+        }
+    ]
+},
+chapitre45: {
+    subtitle: "Contre-attaque",
+    text: "Vous vous rendez compte que le poison ne fonctionne pas. «Tu croyais me vaincre avec ça? Hahaha hahaha hahaha ! Le contenu de cette seringue n'est plus très éfficace on dirait! Oh oh ! Maintenant, fais moi plaisir et meurt!»",
+    img: "mechant.jpg",
+    option: [
+        {
+            text: "Non",
+            action: "goToChapter('chapitre46')"
+        },
+        {
+            text: "Oui",
+            action: "goToChapter('chapitre47')"
+        }
+    ]
+},
+chapitre46: {
+    subtitle: "Mort",
+    text: "Il vous injecte du poison directement dans le visage. Votre chaire brûle et vos organes lâchent un à un. C'est la fin pour vous.",
+    img: "acide.jpg",
+    option: [
+        {
+            text: "Recommencer",
+            action: "goToChapter('chapitre1')"
+        }
+    ]
+},
+chapitre47: {
+    subtitle: "Un héro innatendu",
+    text: "L'individu qui a éssayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose du poison. Cette fois-ci elle est plus récente et donc plus éfficace. Le maniac meurt tranquillement, en silence en souriant et en lâchant ses dernières paroles: « Le bien n'est autre que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal est la plus grandes élusion qui existe. Le bien n'est autre que le mal déguisé»",
+    img: "masque.jpg",
+    option: [
+        {
+            text: "Recommencer",
+            action: "goToChapter('chapitre1')"   
+        }
+    ]
+},
 };
-    
 
-function goToChapter(chapterName) {
-const chapitre = chapterName;
-console.log(chapitre.subtitle);
-console.log(chapitre.text);
-}
+function goToChapter (chapterName) {
+console.log(chaptersObj[chapterName].subtitle);
+console.log(chaptersObj[chapterName].text);
+};
 
 
 
