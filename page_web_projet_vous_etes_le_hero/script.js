@@ -600,7 +600,7 @@ chapitre46: {
 },
 chapitre47: {
     subtitle: "Un héro innatendu",
-    text: "L'individu qui a éssayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose de poison. Cette fois-ci elle est plus récente et donc plus éfficace. Le maniac meurt tranquillement, en silence, tout en souriant et en lâchant ses dernières paroles: « Le bien n'est rien d'autre que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal est la plus grandes élusion que l'homme n'est jamais inventé. Gare à ceux qui croient faire le bien car... le bien n'est rien d'autre que le mal déguisé.»",
+    text: "L'individu qui a éssayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose de poison. Cette fois-ci elle est plus récente et donc plus éfficace. Le maniac meurt tranquillement, en silence, tout en souriant et en lâchant ses dernières paroles: « Le bien n'est rien d'autres que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal est la plus grandes élusion que l'homme n'est jamais inventé. Gare à ceux qui croient faire le bien car... le bien n'est rien d'autres que le mal déguisé.»",
     img: "assets/img/masque.jpg",
     option: [
         {
