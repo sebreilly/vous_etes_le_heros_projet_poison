@@ -38,7 +38,7 @@ function shifterIndice() {
 let chaptersObj = {
 chapitre1: {
     subtitle: "Le réveil",
-    text: "Vous vous réveillez dans une cellule. Vous êtes confus et vous vous demandez comment vous êtes arrivé là. Vous vous levez et vous dirigez vers la porte de la cellule.",
+    text: "Vous vous réveillez dans une cellule. Vous êtes confus et vous vous demandez comment vous êtes arrivé là. Vous vous levez et vous vous dirigez vers la porte de la cellule.",
     img: "assets/img/reveil.jpg",
     option: [
         {
@@ -49,7 +49,7 @@ chapitre1: {
 },
 chapitre2: {
     subtitle: "Le vérou",
-    text: "Vous remarquez que la porte de votre cellule est vérouillée. Vous devez réfléchir rapidement, que faîtes vous?",
+    text: "Vous remarquez que la porte de votre cellule est vérouillée. Vous devez réfléchir rapidement, que faîtes-vous?",
     img: "assets/img/barreaux.jpg",
     option: [
         {
@@ -97,7 +97,7 @@ chapitre5: {
 },
 chapitre6: {
     subtitle: "Quel chemin?",
-    text: "Vous décider de rejoindre le centre du corridor. Vous ne pouvez pas rester une minute de plus dans cet endroit.",
+    text: "Vous décidez de rejoindre le centre du corridor. Vous ne pouvez pas rester une minute de plus dans cet endroit.",
     img: "assets/img/corridor.jpg",
     option: [
         {
@@ -112,11 +112,11 @@ chapitre7: {
     img: "assets/img/eau.jpg",
     option: [
         {
-            text: "Droite",
+            text: "Gauche",
             action: "goToChapter('chapitre8')" 
         },
         {
-            text: "Gauche",
+            text: "Droite",
             action: "goToChapter('chapitre8')"  
         },
         {
@@ -138,7 +138,7 @@ chapitre8: {
 },
 chapitre9: {
     subtitle: "La faille",
-    text: "Vous remarquez une faille dans le mur longeant votre cellule. Vous vous rapprocher de celle-ci et vous y remarquez un petit objet. En le ramassant, vous découvrez qu'il s'agit d'un trombone.",
+    text: "Vous remarquez une faille dans le mur longeant votre cellule. Vous vous rapprochez de celle-ci et vous y remarquez un petit objet. En le ramassant, vous découvrez qu'il s'agit d'un trombone.",
     img: "assets/img/trombone.jpg",
     option: [
         {
@@ -148,8 +148,8 @@ chapitre9: {
     ]
 },
 chapitre10: {
-    subtitle: "Un étrange clé",
-    text: "Vous remarquez que le trombone a une étrange forme. Vous décidez de retourner à la porte de votre cellule. Vous insérer le trombone dans la serrure de la porte. Miracle! C'est dévérouillé!",
+    subtitle: "Une étrange clé",
+    text: "Vous remarquez que le trombone a une étrange forme. Vous décidez de retourner à la porte de votre cellule. Vous insérez le trombone dans la serrure de la porte. Miracle! C'est dévérouillé!",
     img: "assets/img/cellule.jpg",
     option: [
         {
@@ -164,18 +164,18 @@ chapitre11: {
     img: "assets/img/corridor.jpg",
     option: [
         {
-            text: "Droite",
+            text: "Gauche",
             action: "goToChapter('chapitre8')"
         },
         {
-            text: "Gauche",
+            text: "Droite",
             action: "goToChapter('chapitre8')" 
         }
     ]
 },
 chapitre12: {
     subtitle: "La trappe",
-    text: "Vous remarquez de la lumière venant du plafond. En vous situant en dessous de la source lumineuse, vous remarquez une trappe au plafond. Vous décidez de vous laisser floter jusqu'à pouvoir l'ateindre.",
+    text: "Vous remarquez de la lumière venant du plafond. En vous situant en-dessous de la source lumineuse, vous remarquez une trappe au plafond. Vous décidez de vous laissez floter jusqu'à pouvoir l'ateindre.",
     img: "assets/img/trappe.jpg",
     option: [
         {
@@ -197,7 +197,7 @@ chapitre13: {
 },
 chapitre14: {
     subtitle: "Le téléphone",
-    text: "Tout à coup, un téléphone se met a sonner. Vous trouvez ça louche, mais vous décidez quand même de décrocher la ligne.",
+    text: "Tout à coup, un téléphone se met à sonner. Vous trouvez ça louche, mais vous décidez quand même de décrocher la ligne.",
     img: "assets/img/telephone.jpg",
     option: [
         {
@@ -208,7 +208,7 @@ chapitre14: {
 },
 chapitre15: {
     subtitle: "Qui à l'appareil?",
-    text: "Une voix masculine se met à vous parlez. « Félicitation, tu as passer la première épreuve, mais gare à toi car la prochaine fois je ne serai peut-être pas d'aussi bonne humeur. Puisque c'est ta première fois, je vais te donner un indice. Prend le couteau.» Que faîtes-vous?",
+    text: "Une voix masculine se met à vous parlez. « Félicitation, tu as passé la première épreuve, mais gare à toi car la prochaine fois je ne serai peut-être pas d'aussi bonne humeur. Puisque c'est ta première fois, je vais te donner un indice. Prend le couteau.» Que faîtes-vous?",
     img: "assets/img/telephone.jpg",
     option: [
         {
@@ -223,7 +223,7 @@ chapitre15: {
 },
 chapitre16: {
     subtitle: "Un fou",
-    text: "Vous décidé de ne pas lui faire confiance et vous lui raccroché au nez.",
+    text: "Vous décidez de ne pas lui faire confiance et vous lui raccrochez au nez.",
     img: "assets/img/telephone.jpg",
     option: [
         {
@@ -233,7 +233,7 @@ chapitre16: {
     ]
 },
 chapitre17: {
-    subtitle: "Une issu?",
+    subtitle: "Une issue?",
     text: "Vous remarquez une porte à votre droite. Vous vous précipitez vers elle, mais elle est barricadée.",
     img: "assets/img/porte.jpg",
     option: [
@@ -245,7 +245,7 @@ chapitre17: {
 },
 chapitre18: {
     subtitle: "Le jour de la marmotte",
-    text: "Vous vous retourner et tomber nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec une arme à feu. Avant même que vous ayez le temps de comprendre, vous vous faîtes tirer dessus à plusieurs reprises jusqu'à ce que vous sucombez à vos blessures.",
+    text: "Vous vous retournez et vous tombez nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec une arme à feu. Avant même que vous ayez le temps de comprendre, vous vous faîtes tirer dessus à plusieurs reprises jusqu'à ce que vous sucombez à vos blessures.",
     img: "assets/img/gun.jpg",
     option: [
         {
@@ -256,7 +256,7 @@ chapitre18: {
 },
 chapitre19: {
     subtitle: "Un conseil",
-    text: "Vous décidez d'écoutez cet homme étrange et vous attrapez le premier couteau que vous voyez.",
+    text: "Vous décidez d'écouter cet homme étrange et vous attrapez le premier couteau que vous voyez.",
     img: "assets/img/couteau.jpg",
     option: [
         {
@@ -267,7 +267,7 @@ chapitre19: {
 },
 chapitre20: {
     subtitle: "Le jour de la marm...Quoi?",
-    text: "Vous vous retournez et tombez nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec un arme à feu. Avant même qu'il puisse faire quoi que se soit, vous le poignardez dans la cuisse et évitez de justesse de vous faire tirer dessus.",
+    text: "Vous vous retournez et vous tombez nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec une arme à feu. Avant même qu'il puisse faire quoi que se soit, vous le poignardez dans la cuisse et  vous évitez de justesse de vous faire tirer dessus.",
     img: "assets/img/gun.jpg",
     option: [
         {
@@ -278,7 +278,7 @@ chapitre20: {
 },
 chapitre21: {
     subtitle: "Un choix difficile",
-    text: "Pendant que l'individu est à terre, vous en profiter pour lui prendre son arme. Q'aller vous faire?",
+    text: "Pendant que l'individu est à terre, vous en profitez pour lui prendre son arme. Q'allez-vous faire?",
     img: "assets/img/fusil.jpg",
     option: [
         {
@@ -308,7 +308,7 @@ chapitre22: {
 },
 chapitre23: {
     subtitle: "Cache-cache",
-    text: "Vous regardez rapidement autours de vous. Vous devez trouvez un endroit où vous cacher avant que l'individu vous rattrappe.",
+    text: "Vous regardez rapidement autours de vous. Vous devez trouver un endroit où vous cachez avant que l'individu ne vous rattrappe.",
     img: "assets/img/cachette.jpg",
     option: [
         {
@@ -334,7 +334,7 @@ chapitre24: {
 },
 chapitre25: {
     subtitle: "La moral",
-    text: "Malgré qu'il a éssayé de vous tuer, vous avez pitié de lui et vous décider de l'assomer. Votre agresseur tombe dans les pommes. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter.",
+    text: "Malgré qu'il a éssayé de vous tuer, vous avez pitié de lui et vous décidez de l'assommer. Votre agresseur tombe dans les pommes. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter.",
     img: "assets/img/poing2.jpg",
     option: [
         {
@@ -356,7 +356,7 @@ chapitre26: {
 },
 chapitre27: {
     subtitle: "Un outil merveilleux",
-    text: "Vous arrivez à une porte barricader, pas de soucis! À l'aide du tournevis, vous dévisser la poignée de porte et vous voilà passer.",
+    text: "Vous arrivez à une porte barricadée, pas de soucis! À l'aide du tournevis, vous dévissez la poignée de porte et vous voilà passé.",
     img: "assets/img/porte.jpg",
     option: [
         {
@@ -367,7 +367,7 @@ chapitre27: {
 },
 chapitre28: {
     subtitle: "Chambre froide",
-    text: "Vous vous retrouvez dans une pièce s'apparentant à une chambre froide. S'est alors qu'une vielle télévision s'allume. Une silouhette apparaît dans l'écran. C'est l'homme qui vous a parler plus tôt. « Je vois que tu as suivit mon conseil. Très bien ! Cependant j'ai bien peur que le jeu doit s'arrêter ici. Pas d'issu cette fois. Hahaha hahaha ah ! Je vais m'occuper de toi convenablement. En attendant, éssais de trouver une sortie. Ça n'en sera que plus excitant quand nous nous rencontrerons! À très bientôt. Hahaha hahaha hahaha...»",
+    text: "Vous vous retrouvez dans une pièce s'apparentant à une chambre froide. S'est alors qu'une vielle télévision s'allume. Une silouhette apparaît dans l'écran. C'est l'homme qui vous a parlé plus tôt. « Je vois que tu as suivis mon conseil. Très bien ! Cependant j'ai bien peur que le jeu doit s'arrêter ici. Pas d'issu cette fois. Hahaha hahaha ah ! Je vais m'occuper de toi convenablement. En attendant, éssais de trouver une sortie. Ça n'en sera que plus excitant quand nous nous rencontrerons! À très bientôt. Hahaha hahaha hahaha...»",
     img: "assets/img/tv.jpg",
     option: [
         {
@@ -408,7 +408,7 @@ chapitre30: {
 },
 chapitre31: {
     subtitle: "Un indice mortel",
-    text: "En examinant bien la pièce, vous remarquez les reste d'un cadavre couché sur sol. En vous approchant de lui, vous remarquez qu'il détient une enveloppe dans sa main.",
+    text: "En examinant bien la pièce, vous remarquez les restes d'un cadavre couchés sur le sol. En vous approchant de lui, vous remarquez qu'il détient une enveloppe dans sa main. Vous la prenez",
     img: "assets/img/os.jpg",
     option: [
         {
@@ -419,7 +419,7 @@ chapitre31: {
 },
 chapitre32: {
     subtitle: "Le robinet",
-    text: "Vous remarquez une évier dans le coin de la pièce. Ça tombe assez bien car vous avez soif. Vous ouvrez le robinet et vous abreuvez.",
+    text: "Vous remarquez un évier dans le coin de la pièce. Ça tombe assez bien car vous avez soif. Vous ouvrez le robinet et vous vous abreuvez.",
     img: "assets/img/boire.jpg",
     option: [
         {
@@ -430,7 +430,7 @@ chapitre32: {
 },
 chapitre33: {
     subtitle: "Passage secret",
-    text: "Au même moment un passage s'ouvre sur votre gauche donnant accès à un escalier. Vous ne perdez pas une minute de plus et descendez l'escalier.",
+    text: "Au même moment, un passage s'ouvre sur votre gauche donnant accès à un escalier. Vous ne perdez pas une minute de plus et vous descendez l'escalier.",
     img: "assets/img/escalier.jpg",
     option: [
         {
@@ -441,7 +441,7 @@ chapitre33: {
 },
 chapitre34: {
     subtitle: "Le sanctuaire",
-    text: "Vous vous retrouvez dans une sorte de sanctuaire sacrificiel. En regardant devant vous, vous remarquer une immense porte.",
+    text: "Vous vous retrouvez dans une sorte de sanctuaire sacrificiel. En regardant devant vous, vous remarquez une immense porte.",
     img: "assets/img/royal.jpg",
     option: [
         {
@@ -463,7 +463,7 @@ chapitre35: {
 },
 chapitre36: {
     subtitle: "Le maniac",
-    text: "Tout à coups, vous entendez des murmurs venat de l'escalier. C'est lui, c'est le fou de la télé.",
+    text: "Tout à coups, vous entendez des murmurs venant de l'escalier. C'est lui, c'est le fou de la télé.",
     img: "assets/img/maniac.jpg",
     option: [
         {
@@ -478,7 +478,7 @@ chapitre36: {
 },
 chapitre37: {
     subtitle: "À l'attaque!",
-    text: "Vous ne réfléchissez plus! Vous foncer tête première sur lui. Cependant avec quoi l'attaquer?",
+    text: "Vous ne réfléchissez plus! Vous foncez tête première sur lui. Cependant avec quoi l'attaquer?",
     img: "assets/img/armes.jpg",
     option: [
         {
@@ -523,7 +523,7 @@ chapitre39: {
 },
 chapitre40: {
     subtitle: "La roche",
-    text: "Vous retrouver la roche qui vous a servit plus tôt. Vous décider de la lancer pour créer une diversion.",
+    text: "Vous retrouvez la roche qui vous a servit plus tôt. Vous décidez de la lancer pour créer une diversion.",
     img: "assets/img/roche.jpg",
     option: [
         {
@@ -534,7 +534,7 @@ chapitre40: {
 },
 chapitre41: {
     subtitle: "Remonter",
-    text: "Vous courez en direction de l'escalier dans l'espoire de vous échapper. En arrivant en haut de l'escalier, vous remarquez que le passage est refermé. Vous vous retournez et il est là, juste devant vous. Il vous prend et vous pousse dans l'escalier. Vous faite une descente mortelle en vous brisant la nuque.",
+    text: "Vous courez en direction de l'escalier dans l'espoire de vous échappez. En arrivant en haut de l'escalier, vous remarquez que le passage est refermé. Vous vous retournez et il est là, juste devant vous. Il vous prend et vous pousse dans l'escalier. Vous faites une descente mortelle et vous vous brisez la nuque.",
     img: "assets/img/escalier2.jpg",
     option: [
         {
@@ -556,7 +556,7 @@ chapitre42: {
 },
 chapitre43: {
     subtitle: "L'indice",
-    text: "Vous sortez l'indice que vous avez préalablement obtenu sur le cadavre. Vous le lisez.«Si vous lisez ceci c'est que je ne suis déjà plus de ce monde. Cependant j'ai trouvé le point faible de ce psychopate. Prenez la seringue ci-jointe à ce message. Elle contient juste assez d'un poison pour pouvoir le neutraliser. Je vous en conjure, éléminer le ! Il ne doit pas s'en sortir.»",
+    text: "Vous sortez l'indice que vous avez préalablement obtenu sur le cadavre. Vous le lisez:«Si vous lisez ceci c'est que je ne suis déjà plus de ce monde. Cependant j'ai trouvé le point faible de ce psychopate. Prenez la seringue ci-jointe à ce message. Elle contient juste assez d'un poison pour pouvoir le neutraliser. Je vous en conjure, éléminez le ! Il ne doit pas s'en sortir.»",
     img: "assets/img/poison.jpg",
     option: [
         {
@@ -589,7 +589,7 @@ chapitre45: {
 },
 chapitre46: {
     subtitle: "Mort",
-    text: "Il vous injecte du poison directement dans le visage. Votre chaire brûle et vos organes lâchent un à un. C'est la fin pour vous.",
+    text: "Il vous injecte du poison directement dans le visage. Votre chaire brûle et vos organes lâchent un par un. C'est la fin pour vous.",
     img: "assets/img/acide.jpg",
     option: [
         {
@@ -600,7 +600,7 @@ chapitre46: {
 },
 chapitre47: {
     subtitle: "Un héro innatendu",
-    text: "L'individu qui a éssayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose du poison. Cette fois-ci elle est plus récente et donc plus éfficace. Le maniac meurt tranquillement, en silence en souriant et en lâchant ses dernières paroles: « Le bien n'est autre que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal est la plus grandes élusion qui existe. Le bien n'est autre que le mal déguisé»",
+    text: "L'individu qui a éssayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose de poison. Cette fois-ci elle est plus récente et donc plus éfficace. Le maniac meurt tranquillement, en silence, tout en souriant et en lâchant ses dernières paroles: « Le bien n'est rien d'autre que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal est la plus grandes élusion que l'homme n'est jamais inventé. Gare à ceux qui croient faire le bien car... le bien n'est rien d'autre que le mal déguisé.»",
     img: "assets/img/masque.jpg",
     option: [
         {
