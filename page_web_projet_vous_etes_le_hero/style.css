@@ -31,10 +31,17 @@ p{
     font-size: 17px;
 }
 
+input{
+    font-family: 'Artifika';
+    color: #F4EBE8;
+    font-size: 17px; 
+}
+
 .bouton{
     background-color: #AC695D;
     border-radius: 15px;
     padding: 5px;
+    margin-top: 10px;
 }
 
 body{
@@ -50,7 +57,14 @@ body{
 img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
+
+.image{
+overflow: hidden;
+}
+
+
 
 .option{
     width: 100%;
