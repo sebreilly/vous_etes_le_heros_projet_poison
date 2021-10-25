@@ -1,73 +1,73 @@
 @font-face {
-    src: url('/page_web_projet_vous_etes_le_hero/assets/font/Artifika-Regular.ttf') format('truetype');
-    font-family: 'Artifika';
+  src: url("/page_web_projet_vous_etes_le_hero/assets/font/Artifika-Regular.ttf")
+    format("truetype");
+  font-family: "Artifika";
 }
 
-@font-face{
-    src: url('/page_web_projet_vous_etes_le_hero/assets/font/WendyOne-Regular.ttf') format('truetype');
-    font-family: 'Wendy One';
+@font-face {
+  src: url("/page_web_projet_vous_etes_le_hero/assets/font/WendyOne-Regular.ttf")
+    format("truetype");
+  font-family: "Wendy One";
 }
 
-.game{
-    width: 900px;
-    min-height: 100px;
-    background-color: #0A5C52;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    box-sizing: border-box;
+.game {
+  width: 900px;
+  min-height: 100px;
+  background-color: #0a5c52;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Wendy One';
-    color: #2C1126;
-    font-size: 50px;
+h1 {
+  font-family: "Wendy One";
+  color: #2c1126;
+  font-size: 50px;
 }
 
-p{
-    font-family: 'Artifika';
-    color: #F4EBE8;
-    font-size: 17px;
+p {
+  font-family: "Artifika";
+  color: #f4ebe8;
+  font-size: 17px;
 }
 
-input{
-    font-family: 'Artifika';
-    color: #F4EBE8;
-    font-size: 17px; 
+input {
+  font-family: "Artifika";
+  color: #f4ebe8;
+  font-size: 17px;
 }
 
-.bouton{
-    background-color: #AC695D;
-    border-radius: 15px;
-    padding: 5px;
-    margin-top: 10px;
+.bouton {
+  background-color: #ac695d;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
 }
 
-body{
-    width: auto;
-    height: 1100px;
-    background-color: #0F3757;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  width: auto;
+  height: 1100px;
+  background-color: #0f3757;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.image{
-overflow: hidden;
+.image {
+  overflow: hidden;
 }
 
-
-
-.option{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+.option {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
