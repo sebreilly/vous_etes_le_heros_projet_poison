@@ -113,6 +113,7 @@ let chaptersObj = {
     subtitle: "Vite de l'eau",
     text: "Tout d'un coup, une alarme se déclenche. Vous vous rendez compte que le corridor commence à se remplir d'eau. Vite! Prenez une direction.",
     img: "assets/img/eau.jpg",
+    video: "assets/video/eau.mp4",
     audio: "assets/audio/whoosh.mp3",
     option: [
       {
@@ -393,6 +394,7 @@ let chaptersObj = {
     subtitle: "Chambre froide",
     text: "Vous vous retrouvez dans une pièce s'apparentant à une chambre froide. S'est alors qu'une vielle télévision s'allume. Une silouhette apparaît dans l'écran. C'est l'homme qui vous a parlé plus tôt. « Je vois que tu as suivis mon conseil. Très bien ! Cependant j'ai bien peur que le jeu doit s'arrêter ici. Pas d'issu cette fois. Hahaha hahaha ah ! Je vais m'occuper de toi convenablement. En attendant, éssais de trouver une sortie. Ça n'en sera que plus excitant quand nous nous rencontrerons! À très bientôt. Hahaha hahaha hahaha...»",
     img: "assets/img/tv.jpg",
+    video: "assets/video/tv.mp4",
     audio: "assets/audio/whoosh.mp3",
     option: [
       {
@@ -654,21 +656,35 @@ let chaptersObj = {
     ],
   },
 };
-
+let audio = new Audio("assets/audio/whoosh.mp3");
+document.querySelector(".option").addEventListener("click", function(){
+  audio.play();
+})
 function goToChapter(chapterName) {
   let boutonText = "";
   document.querySelector(".nom").innerText = chaptersObj[chapterName].subtitle;
   document.querySelector(".texte").innerText = chaptersObj[chapterName].text;
-  document.querySelector(".image").innerHTML = `<img src="${chaptersObj[chapterName].img}"/>`;
+  
 
   for (let index = 0; index < chaptersObj[chapterName].option.length; index++) {
       const option = chaptersObj[chapterName].option[index];
       boutonText += `<button class="bouton" onclick="${option.action}">${option.text}</button>`;
   }
   document.querySelector(".option").innerHTML = boutonText;
-  const audio = new Audio(chaptersObj[chapterName].audio);
-document.querySelector(".option").addEventListener("click", function(){
-  audio.play();
-})
+  audio.currentTime = 0;
+
+  const videoSrc = chaptersObj[chapterName].video;
+  if(videoSrc != undefined){
+    document.querySelector(".image").innerHTML = `<video src="${chaptersObj[chapterName].video}" autoplay muted loop></video>`;
+  }else{
+    document.querySelector(".image").innerHTML = `<img src="${chaptersObj[chapterName].img}"/>`;
+  }
+console.log(chaptersObj[chapterName].video);
+localStorage.setItem("chapitre", chapterName)
+console.log(localStorage);
+const chapitreStorage = localStorage.getItem("chapitre");
+console.log(chapitreStorage);
 }
 goToChapter("chapitre1");
+
+
