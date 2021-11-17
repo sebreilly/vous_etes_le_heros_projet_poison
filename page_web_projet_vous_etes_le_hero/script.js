@@ -690,14 +690,16 @@ localStorage.setItem("tuer", tuer);
 console.log(`tuer: ${tuer}`);
 localStorage.setItem("indice", indice);
 console.log(`indice: ${indice}`);
-
 }
+
 document.addEventListener("DOMContentLoaded", function(){
   if(localStorage.getItem("chapitre") != undefined){
     goToChapter(`${localStorage.getItem("chapitre")}`);
   }else{
     goToChapter("chapitre1");
-    localStorage.clear();
+    localStorage.removeItem("roche");
+    localStorage.removeItem("tuer");
+    localStorage.removeItem("indice")
   }
 })
 
