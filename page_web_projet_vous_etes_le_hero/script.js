@@ -89,7 +89,7 @@ let chaptersObj = {
     subtitle: "Le corridor",
     text: "Vous sortez de votre cellule. Vous vous retrouvez dans un corridor.",
     img: "assets/img/corridor.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: "assets/audio/porte_ouvre.mp3",
     option: [
       {
         text: "Continuer",
@@ -666,5 +666,9 @@ function goToChapter(chapterName) {
       boutonText += `<button class="bouton" onclick="${option.action}">${option.text}</button>`;
   }
   document.querySelector(".option").innerHTML = boutonText;
+  const audio = new Audio(chaptersObj[chapterName].audio);
+document.querySelector(".option").addEventListener("click", function(){
+  audio.play();
+})
 }
 goToChapter("chapitre1");
