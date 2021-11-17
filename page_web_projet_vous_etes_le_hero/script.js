@@ -661,6 +661,7 @@ document.querySelector(".option").addEventListener("click", function(){
   audio.play();
 })
 function goToChapter(chapterName) {
+  console.clear();
   let boutonText = "";
   document.querySelector(".nom").innerText = chaptersObj[chapterName].subtitle;
   document.querySelector(".texte").innerText = chaptersObj[chapterName].text;
@@ -679,26 +680,25 @@ function goToChapter(chapterName) {
   }else{
     document.querySelector(".image").innerHTML = `<img src="${chaptersObj[chapterName].img}"/>`;
   }
-console.log(chaptersObj[chapterName].video);
 
 localStorage.setItem("chapitre", chapterName);
-console.log(localStorage);
 const chapitreStorage = localStorage.getItem("chapitre");
 console.log(chapitreStorage);
 localStorage.setItem("roche", rocheTrouver);
+console.log(`roche: ${rocheTrouver}`);
 localStorage.setItem("tuer", tuer);
+console.log(`tuer: ${tuer}`);
 localStorage.setItem("indice", indice);
+console.log(`indice: ${indice}`);
+
 }
 document.addEventListener("DOMContentLoaded", function(){
   if(localStorage.getItem("chapitre") != undefined){
     goToChapter(`${localStorage.getItem("chapitre")}`);
-    rocheTrouver = true;
   }else{
     goToChapter("chapitre1");
     localStorage.clear();
   }
-
-
 })
 
 
