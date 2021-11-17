@@ -685,7 +685,21 @@ localStorage.setItem("chapitre", chapterName);
 console.log(localStorage);
 const chapitreStorage = localStorage.getItem("chapitre");
 console.log(chapitreStorage);
+localStorage.setItem("roche", rocheTrouver);
+localStorage.setItem("tuer", tuer);
+localStorage.setItem("indice", indice);
 }
-goToChapter("chapitre1");
+document.addEventListener("DOMContentLoaded", function(){
+  if(localStorage.getItem("chapitre") != undefined){
+    goToChapter(`${localStorage.getItem("chapitre")}`);
+    rocheTrouver = true;
+  }else{
+    goToChapter("chapitre1");
+    localStorage.clear();
+  }
+
+
+})
+
 
 
