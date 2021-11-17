@@ -680,7 +680,8 @@ function goToChapter(chapterName) {
     document.querySelector(".image").innerHTML = `<img src="${chaptersObj[chapterName].img}"/>`;
   }
 console.log(chaptersObj[chapterName].video);
-localStorage.setItem("chapitre", chapterName)
+
+localStorage.setItem("chapitre", chapterName);
 console.log(localStorage);
 const chapitreStorage = localStorage.getItem("chapitre");
 console.log(chapitreStorage);
