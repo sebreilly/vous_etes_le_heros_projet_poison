@@ -32,6 +32,16 @@ function shifterIndice() {
   }
 }
 
+function startOver() {
+  localStorage.setItem("roche", rocheTrouver);
+  rocheTrouver = false;
+  localStorage.setItem("tuer", tuer);
+  tuer = false;
+  localStorage.setItem("indice", indice);
+  indice = false;
+  goToChapter("chapitre1");
+}
+
 let chaptersObj = {
   chapitre1: {
     subtitle: "Le réveil",
@@ -639,7 +649,7 @@ let chaptersObj = {
     option: [
       {
         text: "Recommencer",
-        action: "goToChapter('chapitre1')",
+        action: "startOver()",
       },
     ],
   },
@@ -651,7 +661,7 @@ let chaptersObj = {
     option: [
       {
         text: "Recommencer",
-        action: "goToChapter('chapitre1')",
+        action: "startOver()",
       },
     ],
   },
@@ -684,22 +694,19 @@ function goToChapter(chapterName) {
 localStorage.setItem("chapitre", chapterName);
 const chapitreStorage = localStorage.getItem("chapitre");
 console.log(chapitreStorage);
-localStorage.setItem("roche", rocheTrouver);
 console.log(`roche: ${rocheTrouver}`);
-localStorage.setItem("tuer", tuer);
 console.log(`tuer: ${tuer}`);
-localStorage.setItem("indice", indice);
 console.log(`indice: ${indice}`);
 }
 
 document.addEventListener("DOMContentLoaded", function(){
   if(localStorage.getItem("chapitre") != undefined){
     goToChapter(`${localStorage.getItem("chapitre")}`);
+    localStorage.getItem("roche");
+    localStorage.getItem("tuer");
+    localStorage.getItem("indice");
   }else{
     goToChapter("chapitre1");
-    localStorage.removeItem("roche");
-    localStorage.removeItem("tuer");
-    localStorage.removeItem("indice")
   }
 })
 
