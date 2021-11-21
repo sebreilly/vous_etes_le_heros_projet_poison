@@ -1,18 +1,33 @@
-let rocheTrouver = false;
+let rocheTrouver = false; // Roche non trouvé par défaut (false)
+if (localStorage.getItem("roche") != undefined) { // Est-ce que roche est sauvegardé dans localStorage?
+  rocheTrouver = localStorage.getItem("roche") == true; // Si oui, donnons la valeur à rocheTrouver de ce qu'il y a de sauvegardé.
+}
+
 function statRoche() {
   rocheTrouver = true;
+  localStorage.setItem("roche", rocheTrouver); // rocheTrouver vient de changer de valeur, il faut sauvegarde le tout
   goToChapter("chapitre7");
 }
 
 let tuer = false;
+if (localStorage.getItem("tuer") != undefined) { // Est-ce que tuer est sauvegardé dans localStorage?
+  tuer = localStorage.getItem("tuer") == true; // Si oui, donnons la valeur à tuer de ce qu'il y a de sauvegardé.
+}
+
 function statTuer() {
   tuer = true;
+  localStorage.setItem("tuer", tuer); // tuer vient de changer de valeur, il faut sauvegarde le tout
   goToChapter("chapitre26");
 }
 
 let indice = false;
+if (localStorage.getItem("indice") != undefined) { // Est-ce que indice est sauvegardé dans localStorage?
+  indice = localStorage.getItem("indice") == true; // Si oui, donnons la valeur à indice de ce qu'il y a de sauvegardé.
+}
+
 function statIndice() {
   indice = true;
+  localStorage.setItem("indice", indice); // indice vient de changer de valeur, il faut sauvegarde le tout
   goToChapter("chapitre31");
 }
 
@@ -33,12 +48,14 @@ function shifterIndice() {
 }
 
 function startOver() {
-  localStorage.setItem("roche", rocheTrouver);
+  // On change la variable et ensuite on la sauvegarde et non l'inverse, sinon on sauvegarde l'ancienne valeur.
   rocheTrouver = false;
-  localStorage.setItem("tuer", tuer);
+  localStorage.setItem("roche", rocheTrouver);
   tuer = false;
-  localStorage.setItem("indice", indice);
+  localStorage.setItem("tuer", tuer);
   indice = false;
+  localStorage.setItem("indice", indice);
+  
   goToChapter("chapitre1");
 }
 
@@ -667,9 +684,7 @@ let chaptersObj = {
   },
 };
 let audio = new Audio("assets/audio/whoosh.mp3");
-document.querySelector(".option").addEventListener("click", function(){
-  audio.play();
-})
+
 function goToChapter(chapterName) {
   console.clear();
   let boutonText = "";
@@ -683,6 +698,7 @@ function goToChapter(chapterName) {
   }
   document.querySelector(".option").innerHTML = boutonText;
   audio.currentTime = 0;
+  audio.play();
 
   const videoSrc = chaptersObj[chapterName].video;
   if(videoSrc != undefined){
@@ -691,24 +707,12 @@ function goToChapter(chapterName) {
     document.querySelector(".image").innerHTML = `<img src="${chaptersObj[chapterName].img}"/>`;
   }
 
-localStorage.setItem("chapitre", chapterName);
-const chapitreStorage = localStorage.getItem("chapitre");
-console.log(chapitreStorage);
-console.log(`roche: ${rocheTrouver}`);
-console.log(`tuer: ${tuer}`);
-console.log(`indice: ${indice}`);
+  localStorage.setItem("chapitre", chapterName);
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-  if(localStorage.getItem("chapitre") != undefined){
-    goToChapter(`${localStorage.getItem("chapitre")}`);
-    localStorage.getItem("roche");
-    localStorage.getItem("tuer");
-    localStorage.getItem("indice");
-  }else{
-    goToChapter("chapitre1");
-  }
-})
-
-
+if (localStorage.getItem("chapitre") != undefined){
+  goToChapter(localStorage.getItem("chapitre"));
+} else {
+  goToChapter("chapitre1");
+}
 
