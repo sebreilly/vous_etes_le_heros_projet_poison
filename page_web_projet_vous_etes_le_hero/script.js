@@ -47,8 +47,9 @@ function shifterIndice() {
   }
 }
 
-function startOver() {
+function reset() {
   // On change la variable et ensuite on la sauvegarde et non l'inverse, sinon on sauvegarde l'ancienne valeur.
+  localStorage.clear();
   rocheTrouver = false;
   localStorage.setItem("roche", rocheTrouver);
   tuer = false;
@@ -666,7 +667,7 @@ let chaptersObj = {
     option: [
       {
         text: "Recommencer",
-        action: "startOver()",
+        action: "reset()",
       },
     ],
   },
@@ -678,7 +679,7 @@ let chaptersObj = {
     option: [
       {
         text: "Recommencer",
-        action: "startOver()",
+        action: "reset()",
       },
     ],
   },
