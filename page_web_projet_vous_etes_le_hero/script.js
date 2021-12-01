@@ -51,11 +51,11 @@ function reset() {
   // On change la variable et ensuite on la sauvegarde et non l'inverse, sinon on sauvegarde l'ancienne valeur.
   localStorage.clear();
   rocheTrouver = false;
-  localStorage.setItem("roche", rocheTrouver);
+
   tuer = false;
-  localStorage.setItem("tuer", tuer);
+
   indice = false;
-  localStorage.setItem("indice", indice);
+
   
   goToChapter("chapitre1");
 }
@@ -684,9 +684,30 @@ let chaptersObj = {
     ],
   },
 };
+let EcouteSon = true;
 let audio = new Audio("assets/audio/whoosh.mp3");
 
+const effacer = document.querySelector(".effacer");
+effacer.innerHTML = "<button class='reset'>Effacer ma partie</button>";
+effacer.addEventListener("click", function() {
+  reset();
+})
+
+const son = document.querySelector(".son");
+son.innerHTML = "<input type='checkbox' class='checkbox' name='son' checked>";
+const checkbox = document.querySelector(".checkbox");
+
+
+
 function goToChapter(chapterName) {
+  if(checkbox.checked == true) {
+    EcouteSon = true;
+    
+  }
+  if(checkbox.checked == false) {
+    EcouteSon = false;
+  }
+
   console.clear();
   let boutonText = "";
   document.querySelector(".nom").innerText = chaptersObj[chapterName].subtitle;
@@ -698,8 +719,17 @@ function goToChapter(chapterName) {
       boutonText += `<button class="bouton" onclick="${option.action}">${option.text}</button>`;
   }
   document.querySelector(".option").innerHTML = boutonText;
-  audio.currentTime = 0;
-  audio.play();
+
+
+  if(EcouteSon == true) {
+    audio.currentTime = 0;
+    audio.play();
+  }
+  else {
+    audio.pause();
+  }
+ 
+  
 
   const videoSrc = chaptersObj[chapterName].video;
   if(videoSrc != undefined){
@@ -709,6 +739,7 @@ function goToChapter(chapterName) {
   }
 
   localStorage.setItem("chapitre", chapterName);
+  console.log(localStorage);
 }
 
 if (localStorage.getItem("chapitre") != undefined){

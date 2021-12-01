@@ -72,3 +72,34 @@ img {
   display: flex;
   justify-content: space-evenly;
 }
+
+.effacer {
+  position: relative;
+  bottom: 0;
+  left: 350px;
+}
+
+.reset {
+  background-color: #ac695d;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+}
+
+.son {
+  position: relative;
+  bottom: 40px;
+  right: 400px;
+  color: #ac695d;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+}
+
+.son::after {
+  content: "Son";
+}
