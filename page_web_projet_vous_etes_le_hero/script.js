@@ -722,7 +722,6 @@ function goToChapter(chapterName) {
   }
   document.querySelector(".option").innerHTML = boutonText;
 
-
   if(EcouteSon == true) {
     sound.currentTime = 0;
     sound.play();
@@ -731,12 +730,7 @@ function goToChapter(chapterName) {
     sound.pause();
   }
   
-  if(chaptersObj[chapterName].audio !== undefined){
 
-   sound.play();
-  }else{
-    sound.play();
-  }
   
 
   const videoSrc = chaptersObj[chapterName].video;
