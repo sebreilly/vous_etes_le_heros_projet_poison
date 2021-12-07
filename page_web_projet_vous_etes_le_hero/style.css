@@ -45,6 +45,7 @@ input {
   padding: 5px;
   margin-top: 10px;
   font-family: "Artifika";
+  color: #fff;
 }
 
 body {
@@ -85,6 +86,7 @@ img {
   padding: 5px;
   margin-top: 10px;
   font-family: "Artifika";
+  color: #fff;
 }
 
 .son {
@@ -108,6 +110,18 @@ img {
   background-color: rgba(15, 55, 87, 0.6);
 }
 
+.chapitre7 > .game > h1 {
+  color: red;
+}
+
+.chapitre7 > .game .bouton{
+  background-color: rgb(148, 0, 0);
+}
+
+.chapitre7 > .game .reset{
+  background-color: rgb(15, 38, 112);
+}
+
 .chapitre7 > .blur {
   display: block;
   filter:blur(20px);
@@ -125,6 +139,84 @@ img {
 body.chapitre7 {
   background-color: black;
 }
+
+.chapitre26{
+  background-color: black;
+}
+
+.chapitre26 > .game {
+  background-color: rgb(63, 8, 85);
+  box-shadow: 0 0 10px 10px rgb(63, 8, 85);
+}
+
+.chapitre26 > .game > h1 {
+  color: green;
+  filter: drop-shadow(30px 10px 10px black);  
+}
+
+.chapitre26 > .game  .image {
+  border-radius: 3%;
+  box-shadow:  0 0 10px 5px green;
+}
+
+.chapitre26 > .game .bouton{
+  filter: drop-shadow(10px 10px 10px black);
+  background-color: rgb(105, 2, 179);
+  color: rgb(0, 255, 21);
+  font-weight: 700;
+}
+
+.chapitre26 > .game .reset {
+  filter: drop-shadow(10px 10px 10px black);
+  background-color: rgb(105, 2, 179);
+  color: rgb(0, 255, 21);
+  font-weight: 700;
+}
+
+.chapitre26 > .game .son{
+  color: rgb(21, 163, 33);;
+}
+
+.chapitre31 {
+  background-image: url(/page_web_projet_vous_etes_le_hero/assets/img/indice.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chapitre31 > .game {
+  background-color: rgba(177, 130, 0, 0);
+}
+
+.chapitre31 > .game > h1 {
+  color: rgb(255, 230, 1);
+  text-decoration-line: underline;
+}
+
+.chapitre31 > .game > p {
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(255, 230, 1);
+}
+
+.chapitre31 > .game .bouton {
+  color: rgb(255, 230, 1);
+  font-weight: 700;
+}
+
+.chapitre31 > .game .reset{
+  color: rgb(255, 230, 1);
+  font-weight: 700;
+}
+
+.chapitre31 > .game .son{
+  color: rgb(255, 230, 1);
+  background-color: black;
+  width: 80px;
+  font-weight: 700;
+}
+
+
+
 
 
 
