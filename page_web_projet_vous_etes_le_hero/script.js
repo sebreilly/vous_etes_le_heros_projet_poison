@@ -686,6 +686,7 @@ let chaptersObj = {
 };
 let EcouteSon = true;
 let audio = new Audio("assets/audio/whoosh.mp3");
+const body = document.querySelector('body');
 
 const effacer = document.querySelector(".effacer");
 effacer.innerHTML = "<button class='reset'>Effacer ma partie</button>";
@@ -700,6 +701,7 @@ const checkbox = document.querySelector(".checkbox");
 
 
 function goToChapter(chapterName) {
+  body.className = chapterName;
   if(checkbox.checked == true) {
     EcouteSon = true;
     
