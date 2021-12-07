@@ -215,9 +215,317 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre47 {
+  background-color: rgb(5, 102, 5);
+}
+
+.chapitre47 > .game{
+  background-color: rgb(3, 56, 3);
+  border-radius: 5%;
+}
+
+.chapitre47 > .game > h1 {
+  color: green;
+}
+
+.chapitre47 > .game > p {
+  color: rgb(113, 184, 113);
+}
+
+.chapitre47 > .game .bouton{
+  color: rgb(127, 192, 127);
+  background-color: green;
+}
+
+.chapitre47 > .game .reset {
+  color: rgb(127, 192, 127);
+  background-color: green;
+}
+
+.chapitre47 > .game .son {
+  color: rgb(127, 192, 127);
+}
+
+.chapitre47 > .game  .image{
+  border-radius: 5%;
+}
+
+.chapitre8 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre8 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre8 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre8 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre8 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre8 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre8 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre8 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre18 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre18 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre18 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre18 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre18 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre18 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre18 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre18 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre24 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre24 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre24 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre24 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre24 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre24 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre24 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre24 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre30 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre30 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre30 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre30 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre30 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre30 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre30 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre30 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre38 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre38 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre38 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre38 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre38 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre38 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre38 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre38 > .game .image {
+  border-radius: 5%;
+}
 
 
+.chapitre41 {
+  background-color: rgb(134, 2, 2);
+}
 
+.chapitre41 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
 
+.chapitre41 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
 
+.chapitre41 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
 
+.chapitre41 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre41 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre41 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre41 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre46 {
+  background-color:rgb(31, 0, 53);
+}
+
+.chapitre46 > .game {
+  background-color: rgb(63, 8, 85);
+  border-radius: 5%;
+  box-shadow: 0 0 10px 10px rgb(63, 8, 85);
+}
+
+.chapitre46 > .game  .image {
+  border-radius: 3%;
+  box-shadow:  0 0 10px 5px green;
+}
+
+.chapitre46 > .game .bouton{
+  filter: drop-shadow(10px 10px 10px black);
+  background-color: rgb(105, 2, 179);
+  color: rgb(0, 255, 21);
+  font-weight: 700;
+}
+
+.chapitre46 > .game .reset{
+  filter: drop-shadow(10px 10px 10px black);
+  background-color: rgb(105, 2, 179);
+  color: rgb(0, 255, 21);
+  font-weight: 700;
+}
+
+.chapitre46 > .game .son{
+  color: rgb(21, 163, 33);;
+}
+
+.chapitre46 > .game > h1 {
+  color: green;
+  filter: drop-shadow(30px 10px 10px black);  
+}
+
+.chapitre46 > .game > p {
+  color: rgb(6, 175, 6);
+  font-weight: 700;
+  text-align: justify;
+  filter: drop-shadow(30px 10px 10px black); 
+}

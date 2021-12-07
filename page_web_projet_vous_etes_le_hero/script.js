@@ -685,7 +685,7 @@ let chaptersObj = {
   },
 };
 let EcouteSon = true;
-let audio = new Audio("assets/audio/whoosh.mp3");
+let sound = new Audio("assets/audio/whoosh.mp3");
 const body = document.querySelector('body');
 
 const effacer = document.querySelector(".effacer");
@@ -724,13 +724,19 @@ function goToChapter(chapterName) {
 
 
   if(EcouteSon == true) {
-    audio.currentTime = 0;
-    audio.play();
+    sound.currentTime = 0;
+    sound.play();
   }
   else {
-    audio.pause();
+    sound.pause();
   }
- 
+  
+  if(chaptersObj[chapterName].audio !== undefined){
+
+   sound.play();
+  }else{
+    sound.play();
+  }
   
 
   const videoSrc = chaptersObj[chapterName].video;
