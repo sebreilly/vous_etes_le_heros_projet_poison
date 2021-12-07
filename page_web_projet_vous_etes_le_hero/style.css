@@ -103,3 +103,29 @@ img {
 .son::after {
   content: "Son";
 }
+
+.chapitre7 > .game{
+  background-color: rgba(15, 55, 87, 0.6);
+}
+
+.chapitre7 > .blur {
+  display: block;
+  filter:blur(20px);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.blur {
+  display: none;
+}
+
+body.chapitre7 {
+  background-color: black;
+}
+
+
+
+
