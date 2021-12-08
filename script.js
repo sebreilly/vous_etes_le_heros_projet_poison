@@ -154,6 +154,7 @@ let chaptersObj = {
     subtitle: "Cul de sac",
     text: "Vous arrivez au bout du corridor. Vous tournez le coin et vous vous rendez compte de votre erreur. Trop tard on vous poignarde à mort dans votre dos.",
     img: "assets/img/poignard.jpg",
+    audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -273,6 +274,7 @@ let chaptersObj = {
     subtitle: "Le jour de la marmotte",
     text: "Vous vous retournez et vous tombez nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec une arme à feu. Avant même que vous ayez le temps de comprendre, vous vous faîtes tirer dessus à plusieurs reprises jusqu'à ce que vous sucombez à vos blessures.",
     img: "assets/img/gun.jpg",
+    audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -353,6 +355,7 @@ let chaptersObj = {
     subtitle: "Trouvé!",
     text: "Vous avez mal choisi votre cachette. L'agresseur vous rattrappe et sous le coup de la peur vous figez et il vous tu violemment à coups de poings.",
     img: "assets/img/poing.jpg",
+    audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -430,6 +433,7 @@ let chaptersObj = {
     subtitle: "Retour en arrière",
     text: "Ne voyant rien d'intéressant dans cette pièce et ne savant pas quoi faire, vous décidez de rebrousser chemin. Quelle erreur de votre part car une énorme explosion se déclenche et met feu à toute la pièce. Vous mourez dans d'atroces souffrances.",
     img: "assets/img/feu.jpg",
+    audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -531,6 +535,7 @@ let chaptersObj = {
     subtitle: "Mauvaise idée",
     text: "C'était une très mauvaise idée de l'attaquer tête baissée. Il vous désarme facillement et vous tu avec votre propre arme.",
     img: "assets/img/crane.jpg",
+    audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -568,6 +573,7 @@ let chaptersObj = {
     subtitle: "Remonter",
     text: "Vous courez en direction de l'escalier dans l'espoire de vous échappez. En arrivant en haut de l'escalier, vous remarquez que le passage est refermé. Vous vous retournez et il est là, juste devant vous. Il vous prend et vous pousse dans l'escalier. Vous faites une descente mortelle et vous vous brisez la nuque.",
     img: "assets/img/escalier2.jpg",
+    audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -624,6 +630,7 @@ let chaptersObj = {
     subtitle: "Mort",
     text: "Il vous injecte du poison directement dans le visage. Votre chaire brûle et vos organes lâchent un par un. C'est la fin pour vous.",
     img: "assets/img/acide.jpg",
+    audio: new Audio("assets/audio/cri_mort.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -635,6 +642,7 @@ let chaptersObj = {
     subtitle: "Un héro innatendu",
     text: "L'individu qui a éssayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose de poison. Cette fois-ci elle est plus récente et donc plus éfficace. Le maniac meurt tranquillement, en silence, tout en souriant et en lâchant ses dernières paroles: « Le bien n'est rien d'autres que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal est la plus grandes élusion que l'homme n'est jamais inventé. Gare à ceux qui croient faire le bien car... le bien n'est rien d'autres que le mal déguisé.»",
     img: "assets/img/masque.jpg",
+    audio: new Audio("assets/audio/applaudissement.mp3"),
     option: [
       {
         text: "Recommencer",
