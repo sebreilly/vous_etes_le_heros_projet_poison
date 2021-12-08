@@ -685,15 +685,15 @@ function goToChapter(chapterName) {
   document.querySelector(".option").innerHTML = boutonText;
 
   if(chaptersObj[chapterName].audio != undefined && EcouteSon == true){
-    chaptersObj[chapterName].audio.play();
     chaptersObj[chapterName].audio.currentTime = 0;
+    chaptersObj[chapterName].audio.play();
 }else if(EcouteSon == true) {
     sound.currentTime = 0;
     sound.play();
   }
   else {
-    sound.pause();
     chaptersObj[chapterName].audio.pause();
+    sound.pause();
   }
   
 
