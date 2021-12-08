@@ -681,6 +681,7 @@ function goToChapter(chapterName) {
   document.querySelector(".option").innerHTML = boutonText;
 
   if(chaptersObj[chapterName].audio != undefined && EcouteSon == true){
+    chaptersObj[chapterName].audio.currentime = 0;;
     chaptersObj[chapterName].audio.play();
   }else if(EcouteSon == true) {
     sound.currentTime = 0;
