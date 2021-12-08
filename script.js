@@ -686,12 +686,14 @@ function goToChapter(chapterName) {
 
   if(chaptersObj[chapterName].audio != undefined && EcouteSon == true){
     chaptersObj[chapterName].audio.play();
+    chaptersObj[chapterName].audio.currentTime = 0;
 }else if(EcouteSon == true) {
     sound.currentTime = 0;
     sound.play();
   }
   else {
     sound.pause();
+    chaptersObj[chapterName].audio.pause();
   }
   
 
