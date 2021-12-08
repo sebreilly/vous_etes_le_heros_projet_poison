@@ -46,7 +46,6 @@ function shifterIndice() {
     goToChapter("chapitre41");
   }
 }
-
 function reset() {
   // On change la variable et ensuite on la sauvegarde et non l'inverse, sinon on sauvegarde l'ancienne valeur.
   localStorage.clear();
@@ -55,7 +54,6 @@ function reset() {
   tuer = false;
 
   indice = false;
-
   
   goToChapter("chapitre1");
 }
@@ -647,9 +645,10 @@ let chaptersObj = {
     ],
   },
 };
-let EcouteSon = true;
+
 let sound = new Audio("assets/audio/whoosh.mp3");
 const body = document.querySelector('body');
+let EcouteSon = true;
 
 const effacer = document.querySelector(".effacer");
 effacer.innerHTML = "<button class='reset'>Effacer ma partie</button>";
