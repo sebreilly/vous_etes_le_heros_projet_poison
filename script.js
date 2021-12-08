@@ -65,7 +65,6 @@ let chaptersObj = {
     subtitle: "Le réveil",
     text: "Vous vous réveillez dans une cellule. Vous êtes confus et vous vous demandez comment vous êtes arrivé là. Vous vous levez et vous vous dirigez vers la porte de la cellule.",
     img: "assets/img/reveil.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -77,7 +76,6 @@ let chaptersObj = {
     subtitle: "Le vérou",
     text: "Vous remarquez que la porte de votre cellule est vérouillée. Vous devez réfléchir rapidement, que faîtes-vous?",
     img: "assets/img/barreaux.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Examiner la faille dans le mur",
@@ -93,7 +91,6 @@ let chaptersObj = {
     subtitle: "Le caillou",
     text: "Vous décidez d'examiner la fenêtre en haut de votre lit. Vous y trouvé un caillou.",
     img: "assets/img/roche.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -105,7 +102,6 @@ let chaptersObj = {
     subtitle: "L'échapée",
     text: "Vous retournez à la porte de votre cellule et vous brisez le vérou de la porte.",
     img: "assets/img/cellule.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -117,7 +113,6 @@ let chaptersObj = {
     subtitle: "Le corridor",
     text: "Vous sortez de votre cellule. Vous vous retrouvez dans un corridor.",
     img: "assets/img/corridor.jpg",
-    audio: "assets/audio/porte_ouvre.mp3",
     option: [
       {
         text: "Continuer",
@@ -129,7 +124,6 @@ let chaptersObj = {
     subtitle: "Quel chemin?",
     text: "Vous décidez de rejoindre le centre du corridor. Vous ne pouvez pas rester une minute de plus dans cet endroit.",
     img: "assets/img/corridor.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -142,7 +136,7 @@ let chaptersObj = {
     text: "Tout d'un coup, une alarme se déclenche. Vous vous rendez compte que le corridor commence à se remplir d'eau. Vite! Prenez une direction.",
     img: "assets/img/eau.jpg",
     video: "assets/video/eau.mp4",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/plouf_eau.mp3"),
     option: [
       {
         text: "Gauche",
@@ -162,7 +156,6 @@ let chaptersObj = {
     subtitle: "Cul de sac",
     text: "Vous arrivez au bout du corridor. Vous tournez le coin et vous vous rendez compte de votre erreur. Trop tard on vous poignarde à mort dans votre dos.",
     img: "assets/img/poignard.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Recommencer",
@@ -174,7 +167,6 @@ let chaptersObj = {
     subtitle: "La faille",
     text: "Vous remarquez une faille dans le mur longeant votre cellule. Vous vous rapprochez de celle-ci et vous y remarquez un petit objet. En le ramassant, vous découvrez qu'il s'agit d'un trombone.",
     img: "assets/img/trombone.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -186,7 +178,6 @@ let chaptersObj = {
     subtitle: "Une étrange clé",
     text: "Vous remarquez que le trombone a une étrange forme. Vous décidez de retourner à la porte de votre cellule. Vous insérez le trombone dans la serrure de la porte. Miracle! C'est dévérouillé!",
     img: "assets/img/cellule.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -198,7 +189,6 @@ let chaptersObj = {
     subtitle: "Pour vrai! Quel chemin?",
     text: "Quel chemin allez-vous prendre?",
     img: "assets/img/corridor.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Gauche",
@@ -214,7 +204,6 @@ let chaptersObj = {
     subtitle: "La trappe",
     text: "Vous remarquez de la lumière venant du plafond. En vous situant en-dessous de la source lumineuse, vous remarquez une trappe au plafond. Vous décidez de vous laissez floter jusqu'à pouvoir l'ateindre.",
     img: "assets/img/trappe.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -226,7 +215,6 @@ let chaptersObj = {
     subtitle: "Sorti?",
     text: "Vous ouvrez la trappe au plafond. Vous vous retrouvez dans une étrange cuisine.",
     img: "assets/img/cuisine.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -238,7 +226,7 @@ let chaptersObj = {
     subtitle: "Le téléphone",
     text: "Tout à coup, un téléphone se met à sonner. Vous trouvez ça louche, mais vous décidez quand même de décrocher la ligne.",
     img: "assets/img/telephone.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/telephone.mp3"),
     option: [
       {
         text: "Continuer",
@@ -250,7 +238,6 @@ let chaptersObj = {
     subtitle: "Qui à l'appareil?",
     text: "Une voix masculine se met à vous parlez. « Félicitation, tu as passé la première épreuve, mais gare à toi car la prochaine fois je ne serai peut-être pas d'aussi bonne humeur. Puisque c'est ta première fois, je vais te donner un indice. Prend le couteau.» Que faîtes-vous?",
     img: "assets/img/telephone.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Raccrocher",
@@ -266,7 +253,6 @@ let chaptersObj = {
     subtitle: "Un fou",
     text: "Vous décidez de ne pas lui faire confiance et vous lui raccrochez au nez.",
     img: "assets/img/telephone.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -278,7 +264,6 @@ let chaptersObj = {
     subtitle: "Une issue?",
     text: "Vous remarquez une porte à votre droite. Vous vous précipitez vers elle, mais elle est barricadée.",
     img: "assets/img/porte.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -290,7 +275,7 @@ let chaptersObj = {
     subtitle: "Le jour de la marmotte",
     text: "Vous vous retournez et vous tombez nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec une arme à feu. Avant même que vous ayez le temps de comprendre, vous vous faîtes tirer dessus à plusieurs reprises jusqu'à ce que vous sucombez à vos blessures.",
     img: "assets/img/gun.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -302,7 +287,7 @@ let chaptersObj = {
     subtitle: "Un conseil",
     text: "Vous décidez d'écouter cet homme étrange et vous attrapez le premier couteau que vous voyez.",
     img: "assets/img/couteau.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/couteau.mp3"),
     option: [
       {
         text: "Continuer",
@@ -314,7 +299,6 @@ let chaptersObj = {
     subtitle: "Le jour de la marm...Quoi?",
     text: "Vous vous retournez et vous tombez nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec une arme à feu. Avant même qu'il puisse faire quoi que se soit, vous le poignardez dans la cuisse et  vous évitez de justesse de vous faire tirer dessus.",
     img: "assets/img/gun.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -326,7 +310,6 @@ let chaptersObj = {
     subtitle: "Un choix difficile",
     text: "Pendant que l'individu est à terre, vous en profitez pour lui prendre son arme. Q'allez-vous faire?",
     img: "assets/img/fusil.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Ouvrir une porte",
@@ -346,7 +329,7 @@ let chaptersObj = {
     subtitle: "Trop difficile",
     text: "Vous n'arrivez pas à prendre une décision. Vous décidez donc de fuire en direction d'une porte à votre gauche. Vous vous retrouvez dans une salle à manger.",
     img: "assets/img/resto.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/porte_claque.mp3"),
     option: [
       {
         text: "Continuer",
@@ -358,7 +341,6 @@ let chaptersObj = {
     subtitle: "Cache-cache",
     text: "Vous regardez rapidement autours de vous. Vous devez trouver un endroit où vous cachez avant que l'individu ne vous rattrappe.",
     img: "assets/img/cachette.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Derière le bar",
@@ -374,7 +356,6 @@ let chaptersObj = {
     subtitle: "Trouvé!",
     text: "Vous avez mal choisi votre cachette. L'agresseur vous rattrappe et sous le coup de la peur vous figez et il vous tu violemment à coups de poings.",
     img: "assets/img/poing.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Recommencer",
@@ -386,7 +367,6 @@ let chaptersObj = {
     subtitle: "La moral",
     text: "Malgré qu'il a éssayé de vous tuer, vous avez pitié de lui et vous décidez de l'assommer. Votre agresseur tombe dans les pommes. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter.",
     img: "assets/img/poing2.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -398,7 +378,6 @@ let chaptersObj = {
     subtitle: "Neutralisé",
     text: "Vous prenez la décision de le tuer avec sa propre arme. De toute façon c'était lui ou vous. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter. ",
     img: "assets/img/suprime.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -410,7 +389,7 @@ let chaptersObj = {
     subtitle: "Un outil merveilleux",
     text: "Vous arrivez à une porte barricadée, pas de soucis! À l'aide du tournevis, vous dévissez la poignée de porte et vous voilà passé.",
     img: "assets/img/porte.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/porte_ouvre.mp3"),
     option: [
       {
         text: "Continuer",
@@ -423,7 +402,6 @@ let chaptersObj = {
     text: "Vous vous retrouvez dans une pièce s'apparentant à une chambre froide. S'est alors qu'une vielle télévision s'allume. Une silouhette apparaît dans l'écran. C'est l'homme qui vous a parlé plus tôt. « Je vois que tu as suivis mon conseil. Très bien ! Cependant j'ai bien peur que le jeu doit s'arrêter ici. Pas d'issu cette fois. Hahaha hahaha ah ! Je vais m'occuper de toi convenablement. En attendant, éssais de trouver une sortie. Ça n'en sera que plus excitant quand nous nous rencontrerons! À très bientôt. Hahaha hahaha hahaha...»",
     img: "assets/img/tv.jpg",
     video: "assets/video/tv.mp4",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -435,7 +413,7 @@ let chaptersObj = {
     subtitle: "Cerné",
     text: "Quel sadique ! Vous décidez toute fois de l'écouter et de chercher une issue.",
     img: "assets/img/mur.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/rire_mechant.mp3"),
     option: [
       {
         text: "Rebrousser chemin",
@@ -455,7 +433,6 @@ let chaptersObj = {
     subtitle: "Retour en arrière",
     text: "Ne voyant rien d'intéressant dans cette pièce et ne savant pas quoi faire, vous décidez de rebrousser chemin. Quelle erreur de votre part car une énorme explosion se déclenche et met feu à toute la pièce. Vous mourez dans d'atroces souffrances.",
     img: "assets/img/feu.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Recommencer",
@@ -467,7 +444,6 @@ let chaptersObj = {
     subtitle: "Un indice mortel",
     text: "En examinant bien la pièce, vous remarquez les restes d'un cadavre couchés sur le sol. En vous approchant de lui, vous remarquez qu'il détient une enveloppe dans sa main. Vous la prenez",
     img: "assets/img/os.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -479,7 +455,7 @@ let chaptersObj = {
     subtitle: "Le robinet",
     text: "Vous remarquez un évier dans le coin de la pièce. Ça tombe assez bien car vous avez soif. Vous ouvrez le robinet et vous vous abreuvez.",
     img: "assets/img/boire.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/robinet.mp3"),
     option: [
       {
         text: "Continuer",
@@ -491,7 +467,6 @@ let chaptersObj = {
     subtitle: "Passage secret",
     text: "Au même moment, un passage s'ouvre sur votre gauche donnant accès à un escalier. Vous ne perdez pas une minute de plus et vous descendez l'escalier.",
     img: "assets/img/escalier.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -503,7 +478,6 @@ let chaptersObj = {
     subtitle: "Le sanctuaire",
     text: "Vous vous retrouvez dans une sorte de sanctuaire sacrificiel. En regardant devant vous, vous remarquez une immense porte.",
     img: "assets/img/royal.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -515,7 +489,6 @@ let chaptersObj = {
     subtitle: "Ouvre toi!",
     text: "Vous essayez de l'ouvrir, mais c'est peine perdu. Celle-ci semble fermée depuis plusieurs années.",
     img: "assets/img/royal.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -527,7 +500,6 @@ let chaptersObj = {
     subtitle: "Le maniac",
     text: "Tout à coups, vous entendez des murmurs venant de l'escalier. C'est lui, c'est le fou de la télé.",
     img: "assets/img/maniac.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Lancer votre attaque",
@@ -543,7 +515,6 @@ let chaptersObj = {
     subtitle: "À l'attaque!",
     text: "Vous ne réfléchissez plus! Vous foncez tête première sur lui. Cependant avec quoi l'attaquer?",
     img: "assets/img/armes.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Le fusil",
@@ -563,7 +534,6 @@ let chaptersObj = {
     subtitle: "Mauvaise idée",
     text: "C'était une très mauvaise idée de l'attaquer tête baissée. Il vous désarme facillement et vous tu avec votre propre arme.",
     img: "assets/img/crane.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Recommencer",
@@ -575,7 +545,6 @@ let chaptersObj = {
     subtitle: "Aux abris!",
     text: "Vous vous cachez derière une colonne dans l'espoire qu'il ne vous remarque pas. Vous réfléchissez à une façon de vous sortir de là.",
     img: "assets/img/colonne.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Lancer la roche",
@@ -591,7 +560,6 @@ let chaptersObj = {
     subtitle: "La roche",
     text: "Vous retrouvez la roche qui vous a servit plus tôt. Vous décidez de la lancer pour créer une diversion.",
     img: "assets/img/roche.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -603,7 +571,6 @@ let chaptersObj = {
     subtitle: "Remonter",
     text: "Vous courez en direction de l'escalier dans l'espoire de vous échappez. En arrivant en haut de l'escalier, vous remarquez que le passage est refermé. Vous vous retournez et il est là, juste devant vous. Il vous prend et vous pousse dans l'escalier. Vous faites une descente mortelle et vous vous brisez la nuque.",
     img: "assets/img/escalier2.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Recommencer",
@@ -615,7 +582,7 @@ let chaptersObj = {
     subtitle: "Remus méninge",
     text: "Vous éssayez tant bien que mal de trouver une solution, mais rien n'y fait.",
     img: "assets/img/oeil.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/coeur_battement.mp3"),
     option: [
       {
         text: "Continuer",
@@ -627,7 +594,7 @@ let chaptersObj = {
     subtitle: "L'indice",
     text: "Vous sortez l'indice que vous avez préalablement obtenu sur le cadavre. Vous le lisez:«Si vous lisez ceci c'est que je ne suis déjà plus de ce monde. Cependant j'ai trouvé le point faible de ce psychopate. Prenez la seringue ci-jointe à ce message. Elle contient juste assez d'un poison pour pouvoir le neutraliser. Je vous en conjure, éléminez le ! Il ne doit pas s'en sortir.»",
     img: "assets/img/poison.jpg",
-    audio: "assets/audio/whoosh.mp3",
+    audio: new Audio("assets/audio/page.mp3"),
     option: [
       {
         text: "Continuer",
@@ -639,7 +606,6 @@ let chaptersObj = {
     subtitle: "Confrontation",
     text: "Vous sortez de votre cachete et vous vous dirigez vers lui. Il vous remarque, mais il est trop tard! La seringue est déjà insérée dans son torse.",
     img: "assets/img/globule.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -651,7 +617,6 @@ let chaptersObj = {
     subtitle: "Contre-attaque",
     text: "Vous vous rendez compte que le poison ne fonctionne pas. «Tu croyais me vaincre avec ça? Hahaha hahaha hahaha ! Le contenu de cette seringue n'est plus très éfficace on dirait! Oh oh ! Maintenant, fais moi plaisir et meurt!»",
     img: "assets/img/mechant.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Continuer",
@@ -663,7 +628,6 @@ let chaptersObj = {
     subtitle: "Mort",
     text: "Il vous injecte du poison directement dans le visage. Votre chaire brûle et vos organes lâchent un par un. C'est la fin pour vous.",
     img: "assets/img/acide.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Recommencer",
@@ -675,7 +639,6 @@ let chaptersObj = {
     subtitle: "Un héro innatendu",
     text: "L'individu qui a éssayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose de poison. Cette fois-ci elle est plus récente et donc plus éfficace. Le maniac meurt tranquillement, en silence, tout en souriant et en lâchant ses dernières paroles: « Le bien n'est rien d'autres que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal est la plus grandes élusion que l'homme n'est jamais inventé. Gare à ceux qui croient faire le bien car... le bien n'est rien d'autres que le mal déguisé.»",
     img: "assets/img/masque.jpg",
-    audio: "assets/audio/whoosh.mp3",
     option: [
       {
         text: "Recommencer",
@@ -722,7 +685,9 @@ function goToChapter(chapterName) {
   }
   document.querySelector(".option").innerHTML = boutonText;
 
-  if(EcouteSon == true) {
+  if(chaptersObj[chapterName].audio != undefined && EcouteSon == true){
+    chaptersObj[chapterName].audio.play();
+}else if(EcouteSon == true) {
     sound.currentTime = 0;
     sound.play();
   }
