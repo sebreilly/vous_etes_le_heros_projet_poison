@@ -273,7 +273,6 @@ let chaptersObj = {
     subtitle: "Le jour de la marmotte",
     text: "Vous vous retournez et vous tombez nez à nez avec un individu masqué. Vous remarquez qu'il vous pointe avec une arme à feu. Avant même que vous ayez le temps de comprendre, vous vous faîtes tirer dessus à plusieurs reprises jusqu'à ce que vous sucombez à vos blessures.",
     img: "assets/img/gun.jpg",
-    audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
       {
         text: "Recommencer",
@@ -592,7 +591,6 @@ let chaptersObj = {
     subtitle: "L'indice",
     text: "Vous sortez l'indice que vous avez préalablement obtenu sur le cadavre. Vous le lisez:«Si vous lisez ceci c'est que je ne suis déjà plus de ce monde. Cependant j'ai trouvé le point faible de ce psychopate. Prenez la seringue ci-jointe à ce message. Elle contient juste assez d'un poison pour pouvoir le neutraliser. Je vous en conjure, éléminez le ! Il ne doit pas s'en sortir.»",
     img: "assets/img/poison.jpg",
-    audio: new Audio("assets/audio/page.mp3"),
     option: [
       {
         text: "Continuer",
@@ -645,8 +643,7 @@ let chaptersObj = {
     ],
   },
 };
-
-let sound = new Audio("assets/audio/whoosh.mp3");
+const sound = new Audio("assets/audio/whoosh.mp3");
 const body = document.querySelector('body');
 let EcouteSon = true;
 
@@ -660,9 +657,8 @@ const son = document.querySelector(".son");
 son.innerHTML = "<input type='checkbox' class='checkbox' name='son' checked>";
 const checkbox = document.querySelector(".checkbox");
 
-
-
 function goToChapter(chapterName) {
+
   body.className = chapterName;
   if(checkbox.checked == true) {
     EcouteSon = true;
@@ -685,27 +681,21 @@ function goToChapter(chapterName) {
   document.querySelector(".option").innerHTML = boutonText;
 
   if(chaptersObj[chapterName].audio != undefined && EcouteSon == true){
-    chaptersObj[chapterName].audio.currentTime = 0;
     chaptersObj[chapterName].audio.play();
-}else if(EcouteSon == true) {
+  }else if(EcouteSon == true) {
     sound.currentTime = 0;
     sound.play();
-  }
-  else {
-    chaptersObj[chapterName].audio.pause();
+  }else {
     sound.pause();
+    chaptersObj[chapterName].audio.pause();
   }
   
-
-  
-
   const videoSrc = chaptersObj[chapterName].video;
   if(videoSrc != undefined){
     document.querySelector(".image").innerHTML = `<video src="${chaptersObj[chapterName].video}" autoplay muted loop></video>`;
   }else{
     document.querySelector(".image").innerHTML = `<img src="${chaptersObj[chapterName].img}"/>`;
   }
-
   localStorage.setItem("chapitre", chapterName);
   console.log(localStorage);
 }
