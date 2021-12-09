@@ -687,7 +687,15 @@ function goToChapter(chapterName) {
       boutonText += `<button class="bouton" onclick="${option.action}">${option.text}</button>`;
   }
   document.querySelector(".option").innerHTML = boutonText;
-
+  
+  const videoSrc = chaptersObj[chapterName].video;
+  if(videoSrc != undefined){
+    document.querySelector(".image").innerHTML = `<video src="${chaptersObj[chapterName].video}" autoplay muted loop></video>`;
+  }else{
+    document.querySelector(".image").innerHTML = `<img src="${chaptersObj[chapterName].img}"/>`;
+  }
+  localStorage.setItem("chapitre", chapterName);
+  console.log(localStorage);
   if(chaptersObj[chapterName].audio != undefined && EcouteSon == true){
     chaptersObj[chapterName].audio.currentime = 0;;
     chaptersObj[chapterName].audio.play();
@@ -698,15 +706,6 @@ function goToChapter(chapterName) {
     sound.pause();
     chaptersObj[chapterName].audio.pause();
   }
-  
-  const videoSrc = chaptersObj[chapterName].video;
-  if(videoSrc != undefined){
-    document.querySelector(".image").innerHTML = `<video src="${chaptersObj[chapterName].video}" autoplay muted loop></video>`;
-  }else{
-    document.querySelector(".image").innerHTML = `<img src="${chaptersObj[chapterName].img}"/>`;
-  }
-  localStorage.setItem("chapitre", chapterName);
-  console.log(localStorage);
 }
 
 if (localStorage.getItem("chapitre") != undefined){
