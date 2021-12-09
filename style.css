@@ -49,6 +49,10 @@ input {
   color: #fff;
 }
 
+.bouton:hover{
+  background-color: #971b05;
+}
+
 body {
   width: auto;
   height: 100vh;
@@ -90,6 +94,10 @@ img {
   color: #fff;
 }
 
+.reset:hover{
+  background-color: #971b05;
+}
+
 .son {
   position: relative;
   bottom: 40px;
@@ -111,6 +119,10 @@ img {
   background-color: rgba(15, 55, 87, 0.6);
 }
 
+.chapitre7 > .game .bouton:hover{
+  background-color: rgb(173, 67, 67);
+}
+
 .chapitre7 > .game > h1 {
   color: red;
 }
@@ -121,6 +133,10 @@ img {
 
 .chapitre7 > .game .reset{
   background-color: rgb(15, 38, 112);
+}
+
+.chapitre7 > .game .reset:hover{
+  background-color: rgb(45, 69, 148);
 }
 
 .chapitre7 > .blur {
@@ -167,11 +183,19 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre26 > .game .bouton:hover{
+  background-color: rgb(54, 0, 92);
+}
+
 .chapitre26 > .game .reset {
   filter: drop-shadow(10px 10px 10px black);
   background-color: rgb(105, 2, 179);
   color: rgb(0, 255, 21);
   font-weight: 700;
+}
+
+.chapitre26 > .game .reset:hover{
+  background-color: rgb(54, 0, 92);
 }
 
 .chapitre26 > .game .son{
@@ -238,9 +262,17 @@ body.chapitre7 {
   background-color: green;
 }
 
+.chapitre47 > .game .bouton:hover{
+  background-color: rgb(26, 71, 26);
+}
+
 .chapitre47 > .game .reset {
   color: rgb(127, 192, 127);
   background-color: green;
+}
+
+.chapitre47 > .game .reset:hover{
+  background-color: rgb(26, 71, 26);
 }
 
 .chapitre47 > .game .son {
@@ -270,10 +302,18 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre8 > .game .bouton:hover{
+  background-color: rgb(170, 84, 84);
+}
+
 .chapitre8 > .game .reset{
   background-color: rgb(179, 3, 3);
   color: rgb(78, 1, 1);
   font-weight: 700;
+}
+
+.chapitre8 > .game .reset:hover{
+  background-color: rgb(170, 84, 84);
 }
 
 .chapitre8 > .game > p {
@@ -309,10 +349,18 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre18 > .game .bouton:hover{
+  background-color: rgb(170, 84, 84);;
+}
+
 .chapitre18 > .game .reset{
   background-color: rgb(179, 3, 3);
   color: rgb(78, 1, 1);
   font-weight: 700;
+}
+
+.chapitre18 > .game .reset:hover{
+  background-color: rgb(170, 84, 84);
 }
 
 .chapitre18 > .game > p {
@@ -348,10 +396,18 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre24> .game .bouton:hover{
+  background-color: rgb(170, 84, 84);
+}
+
 .chapitre24 > .game .reset{
   background-color: rgb(179, 3, 3);
   color: rgb(78, 1, 1);
   font-weight: 700;
+}
+
+.chapitre24> .game .reset:hover{
+  background-color: rgb(170, 84, 84);
 }
 
 .chapitre24 > .game > p {
@@ -387,10 +443,18 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre30> .game .bouton:hover{
+    background-color: rgb(170, 84, 84);
+}
+
 .chapitre30 > .game .reset{
   background-color: rgb(179, 3, 3);
   color: rgb(78, 1, 1);
   font-weight: 700;
+}
+
+.chapitre30> .game .reset:hover{
+  background-color: rgb(170, 84, 84);
 }
 
 .chapitre30 > .game > p {
@@ -426,10 +490,18 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre38 > .game .bouton:hover{
+  background-color: rgb(170, 84, 84);
+}
+
 .chapitre38 > .game .reset{
   background-color: rgb(179, 3, 3);
   color: rgb(78, 1, 1);
   font-weight: 700;
+}
+
+.chapitre38 > .game .reset:hover{
+  background-color: rgb(170, 84, 84);
 }
 
 .chapitre38 > .game > p {
@@ -466,10 +538,18 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre41 > .game .bouton:hover{
+  background-color: rgb(170, 84, 84);
+}
+
 .chapitre41 > .game .reset{
   background-color: rgb(179, 3, 3);
   color: rgb(78, 1, 1);
   font-weight: 700;
+}
+
+.chapitre41 > .game .reset:hover{
+  background-color: rgb(170, 84, 84);
 }
 
 .chapitre41 > .game > p {
@@ -508,11 +588,19 @@ body.chapitre7 {
   font-weight: 700;
 }
 
+.chapitre46 > .game .bouton:hover{
+  background-color: rgb(54, 0, 92);
+}
+
 .chapitre46 > .game .reset{
   filter: drop-shadow(10px 10px 10px black);
   background-color: rgb(105, 2, 179);
   color: rgb(0, 255, 21);
   font-weight: 700;
+}
+
+.chapitre46 > .game .reset:hover{
+  background-color: rgb(54, 0, 92);
 }
 
 .chapitre46 > .game .son{
