@@ -87,7 +87,7 @@ let chaptersObj = {
   },
   chapitre3: {
     subtitle: "Le caillou",
-    text: "Vous décidez d'examiner la fenêtre en haut de votre lit. Vous y trouvé un caillou.",
+    text: "Vous décidez d'examiner la fenêtre en haut de votre lit. Vous y trouvez un caillou.",
     img: "assets/img/roche.jpg",
     option: [
       {
@@ -201,7 +201,7 @@ let chaptersObj = {
   },
   chapitre12: {
     subtitle: "La trappe",
-    text: "Vous remarquez de la lumière venant du plafond. En vous situant en-dessous de la source lumineuse, vous remarquez une trappe au plafond. Vous décidez de vous laissez floter jusqu'à pouvoir l'ateindre.",
+    text: "Vous remarquez de la lumière venant du plafond. En vous situant en-dessous de la source lumineuse, vous remarquez une trappe au plafond. Vous décidez de vous laissez flotter jusqu'à pouvoir l'ateindre.",
     img: "assets/img/trappe.jpg",
     option: [
       {
@@ -235,7 +235,7 @@ let chaptersObj = {
   },
   chapitre15: {
     subtitle: "Qui à l'appareil?",
-    text: "Une voix masculine se met à vous parlez. « Félicitation, tu as passé la première épreuve, mais gare à toi car la prochaine fois je ne serai peut-être pas d'aussi bonne humeur. Puisque c'est ta première fois, je vais te donner un indice. Prend le couteau.» Que faîtes-vous?",
+    text: "Une voix masculine se met à vous parler. « Félicitation, tu as passé la première épreuve, mais gare à toi car la prochaine fois je ne serai peut-être pas d'aussi bonne humeur. Puisque c'est ta première fois, je vais te donner un indice. Prend le couteau.» Que faîtes-vous?",
     img: "assets/img/telephone.jpg",
     option: [
       {
@@ -338,7 +338,7 @@ let chaptersObj = {
   },
   chapitre23: {
     subtitle: "Cache-cache",
-    text: "Vous regardez rapidement autours de vous. Vous devez trouver un endroit où vous cachez avant que l'individu ne vous rattrappe.",
+    text: "Vous regardez rapidement autour de vous. Vous devez trouver un endroit où vous cacher avant que l'individu ne vous rattrappe.",
     img: "assets/img/cachette.jpg",
     option: [
       {
@@ -353,7 +353,7 @@ let chaptersObj = {
   },
   chapitre24: {
     subtitle: "Trouvé!",
-    text: "Vous avez mal choisi votre cachette. L'agresseur vous rattrappe et sous le coup de la peur vous figez et il vous tu violemment à coups de poings.",
+    text: "Vous avez mal choisi votre cachette. L'agresseur vous rattrape et sous le coup de la peur vous figez et il vous tue violemment à coups de poings.",
     img: "assets/img/poing.jpg",
     audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
@@ -365,7 +365,7 @@ let chaptersObj = {
   },
   chapitre25: {
     subtitle: "La moral",
-    text: "Malgré qu'il a éssayé de vous tuer, vous avez pitié de lui et vous décidez de l'assommer. Votre agresseur tombe dans les pommes. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter.",
+    text: "Malgré qu'il a essayé de vous tuer, vous avez pitié de lui et vous décidez de l'assommer. Votre agresseur tombe dans les pommes. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter.",
     img: "assets/img/poing2.jpg",
     option: [
       {
@@ -399,7 +399,7 @@ let chaptersObj = {
   },
   chapitre28: {
     subtitle: "Chambre froide",
-    text: "Vous vous retrouvez dans une pièce s'apparentant à une chambre froide. S'est alors qu'une vielle télévision s'allume. Une silouhette apparaît dans l'écran. C'est l'homme qui vous a parlé plus tôt. « Je vois que tu as suivis mon conseil. Très bien ! Cependant j'ai bien peur que le jeu doit s'arrêter ici. Pas d'issu cette fois. Hahaha hahaha ah ! Je vais m'occuper de toi convenablement. En attendant, éssais de trouver une sortie. Ça n'en sera que plus excitant quand nous nous rencontrerons! À très bientôt. Hahaha hahaha hahaha...»",
+    text: "Vous vous retrouvez dans une pièce s'apparentant à une chambre froide. C'est alors qu'une vielle télévision s'allume. Une silouhette apparaît dans l'écran. C'est l'homme qui vous a parlé plus tôt. « Je vois que tu as suivis mon conseil. Très bien ! Cependant j'ai bien peur que le jeu doive s'arrêter ici. Pas d'issu cette fois. Hahaha hahaha ah ! Je vais m'occuper de toi convenablement. En attendant, essais de trouver une sortie. Ça n'en sera que plus excitant quand nous nous rencontrerons! À très bientôt. Hahaha hahaha hahaha...»",
     img: "assets/img/tv.jpg",
     video: "assets/video/tv.mp4",
     option: [
@@ -443,7 +443,7 @@ let chaptersObj = {
   },
   chapitre31: {
     subtitle: "Un indice mortel",
-    text: "En examinant bien la pièce, vous remarquez les restes d'un cadavre couchés sur le sol. En vous approchant de lui, vous remarquez qu'il détient une enveloppe dans sa main. Vous la prenez",
+    text: "En examinant bien la pièce, vous remarquez les restes d'un cadavre couchés au sol. En vous approchant de lui, vous remarquez qu'il détient une enveloppe dans sa main. Vous la prenez.",
     img: "assets/img/os.jpg",
     option: [
       {
@@ -466,7 +466,7 @@ let chaptersObj = {
   },
   chapitre33: {
     subtitle: "Passage secret",
-    text: "Au même moment, un passage s'ouvre sur votre gauche donnant accès à un escalier. Vous ne perdez pas une minute de plus et vous descendez l'escalier.",
+    text: "Au même moment, un passage s'ouvre sur votre gauche donnant accès à un escalier. Vous ne perdez pas une minute de plus et vous descendez.",
     img: "assets/img/escalier.jpg",
     option: [
       {
@@ -499,7 +499,7 @@ let chaptersObj = {
   },
   chapitre36: {
     subtitle: "Le maniac",
-    text: "Tout à coups, vous entendez des murmurs venant de l'escalier. C'est lui, c'est le fou de la télé.",
+    text: "Tout à coups, vous entendez des murmures venant de l'escalier. C'est lui, c'est le fou de la télé.",
     img: "assets/img/maniac.jpg",
     option: [
       {
@@ -533,7 +533,7 @@ let chaptersObj = {
   },
   chapitre38: {
     subtitle: "Mauvaise idée",
-    text: "C'était une très mauvaise idée de l'attaquer tête baissée. Il vous désarme facillement et vous tu avec votre propre arme.",
+    text: "C'était une très mauvaise idée de l'attaquer tête baissée. Il vous désarme facillement et vous tue avec votre propre arme.",
     img: "assets/img/crane.jpg",
     audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
@@ -545,7 +545,7 @@ let chaptersObj = {
   },
   chapitre39: {
     subtitle: "Aux abris!",
-    text: "Vous vous cachez derière une colonne dans l'espoire qu'il ne vous remarque pas. Vous réfléchissez à une façon de vous sortir de là.",
+    text: "Vous vous cachez derière une colonne dans l'espoir qu'il ne vous remarquera pas. Vous réfléchissez à une façon de vous sortir de là.",
     img: "assets/img/colonne.jpg",
     option: [
       {
@@ -571,7 +571,7 @@ let chaptersObj = {
   },
   chapitre41: {
     subtitle: "Remonter",
-    text: "Vous courez en direction de l'escalier dans l'espoire de vous échappez. En arrivant en haut de l'escalier, vous remarquez que le passage est refermé. Vous vous retournez et il est là, juste devant vous. Il vous prend et vous pousse dans l'escalier. Vous faites une descente mortelle et vous vous brisez la nuque.",
+    text: "Vous courez en direction de l'escalier dans l'espoir de vous échapper. En arrivant en haut de l'escalier, vous remarquez que le passage est refermé. Vous vous retournez et il est là, juste devant vous. Il vous prend et vous pousse dans l'escalier. Vous faites une chute mortelle et vous vous brisez la nuque.",
     img: "assets/img/escalier2.jpg",
     audio: new Audio("assets/audio/cri_douleur.mp3"),
     option: [
@@ -583,7 +583,7 @@ let chaptersObj = {
   },
   chapitre42: {
     subtitle: "Remus méninge",
-    text: "Vous éssayez tant bien que mal de trouver une solution, mais rien n'y fait.",
+    text: "Vous essayez tant bien que mal de trouver une solution, mais rien n'y fait.",
     img: "assets/img/oeil.jpg",
     audio: new Audio("assets/audio/coeur_battement.mp3"),
     option: [
@@ -595,7 +595,7 @@ let chaptersObj = {
   },
   chapitre43: {
     subtitle: "L'indice",
-    text: "Vous sortez l'indice que vous avez préalablement obtenu sur le cadavre. Vous le lisez:«Si vous lisez ceci c'est que je ne suis déjà plus de ce monde. Cependant j'ai trouvé le point faible de ce psychopate. Prenez la seringue ci-jointe à ce message. Elle contient juste assez d'un poison pour pouvoir le neutraliser. Je vous en conjure, éléminez le ! Il ne doit pas s'en sortir.»",
+    text: "Vous sortez l'indice que vous avez préalablement obtenu sur le cadavre. Vous le lisez:«Si vous lisez ceci c'est que je ne suis déjà plus de ce monde. Cependant j'ai trouvé le point faible de ce psychopathe. Prenez la seringue ci-jointe à ce message. Elle contient juste assez d'un poison pour pouvoir le neutraliser. Je vous en conjure, éléminez-le ! Il ne doit pas s'en sortir.»",
     img: "assets/img/poison.jpg",
     option: [
       {
@@ -606,7 +606,7 @@ let chaptersObj = {
   },
   chapitre44: {
     subtitle: "Confrontation",
-    text: "Vous sortez de votre cachete et vous vous dirigez vers lui. Il vous remarque, mais il est trop tard! La seringue est déjà insérée dans son torse.",
+    text: "Vous sortez de votre cachette et vous vous dirigez vers lui. Il vous remarque, mais il est trop tard! La seringue est déjà insérée dans son torse.",
     img: "assets/img/globule.jpg",
     option: [
       {
@@ -617,7 +617,7 @@ let chaptersObj = {
   },
   chapitre45: {
     subtitle: "Contre-attaque",
-    text: "Vous vous rendez compte que le poison ne fonctionne pas. «Tu croyais me vaincre avec ça? Hahaha hahaha hahaha ! Le contenu de cette seringue n'est plus très éfficace on dirait! Oh oh ! Maintenant, fais moi plaisir et meurt!»",
+    text: "Vous vous rendez compte que le poison ne fonctionne pas. «Tu croyais me vaincre avec ça? Hahaha hahaha hahaha ! Le contenu de cette seringue n'est plus très éfficace, on dirait! Oh oh ! Maintenant, fais moi plaisir et meurt!»",
     img: "assets/img/mechant.jpg",
     option: [
       {
@@ -640,7 +640,7 @@ let chaptersObj = {
   },
   chapitre47: {
     subtitle: "Un héro innatendu",
-    text: "L'individu qui a éssayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose de poison. Cette fois-ci elle est plus récente et donc plus éfficace. Le maniac meurt tranquillement, en silence, tout en souriant et en lâchant ses dernières paroles: « Le bien n'est rien d'autres que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal est la plus grandes élusion que l'homme n'est jamais inventé. Gare à ceux qui croient faire le bien car... le bien n'est rien d'autres que le mal déguisé.»",
+    text: "L'individu qui a essayé de vous tuer plus tôt dans la cuisine surgit de nul part et injecte une autre dose de poison. Cette fois-ci elle est plus récente et donc plus efficace. Le maniac meurt tranquillement, tout en souriant et en lâchant ses dernières paroles: « Le bien n'est rien d'autre que le mal déguisé». L'individu vient vous voir. « Désolé d'avoir essayé de te tuer plus tôt. J'ai cru que tu étais lui. Tu m'as épargné alors je t'épargne aujourd'hui. Va t'en maintenant et ne reviens jamais.» Vous sortez sain et sauf. Un vieux sage a dit un jour: «Le bien et le mal sont les plus grandes illusions que l'homme n'est jamais inventées. Gare à ceux qui croient faire le bien car... le bien n'est rien d'autre que le mal déguisé.»",
     img: "assets/img/masque.jpg",
     audio: new Audio("assets/audio/applaudissement.mp3"),
     option: [
