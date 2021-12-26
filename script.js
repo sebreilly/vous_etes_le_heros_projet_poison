@@ -364,7 +364,7 @@ let chaptersObj = {
     ],
   },
   chapitre25: {
-    subtitle: "La moral",
+    subtitle: "La morale",
     text: "Malgré qu'il a essayé de vous tuer, vous avez pitié de lui et vous décidez de l'assommer. Votre agresseur tombe dans les pommes. Vous remarquez qu'il trainait un tournevis avec lui. Vous décidez de l'emprunter.",
     img: "assets/img/poing2.jpg",
     option: [
