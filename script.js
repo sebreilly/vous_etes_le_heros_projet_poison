@@ -58,6 +58,11 @@ function reset() {
   goToChapter("chapitre1");
 }
 
+const hidden = document.querySelector(".hidden");
+hidden.addEventListener("click", function() {
+  hidden.classList.toggle("hidden");
+})
+
 let chaptersObj = {
   chapitre1: {
     subtitle: "Le réveil",
