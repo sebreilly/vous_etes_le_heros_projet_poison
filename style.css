@@ -528,6 +528,12 @@ body.chapitre7 {
   top: 50%
 }
 
+.texte{
+  display: block;
+  max-height: 100px;
+  overflow: -moz-hidden-unscrollable;
+}
+
 .textChoix{
   font-size: 20px;
 }
@@ -632,7 +638,7 @@ img {
   width: 100%;
   max-width: 700px;
   max-height: 450px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .image {
