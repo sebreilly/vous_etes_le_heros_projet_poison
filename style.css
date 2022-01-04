@@ -618,3 +618,55 @@ body.chapitre7 {
   text-align: justify;
   filter: drop-shadow(30px 10px 10px black); 
 }
+
+.menuEffacer{
+  width: 400px;
+  background-color: #06332e;
+  padding: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%
+}
+
+.choix{
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.oui{
+  width: 80px;
+  background-color: #ac695d;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+  color: #fff;
+}
+
+.oui:hover{
+  background-color: #971b05;
+}
+
+.non{
+  width: 80px;
+  background-color: #ac695d;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+  color: #fff;
+}
+
+.non:hover{
+  background-color: #971b05;
+}
+
+.cacher{
+  display: none;
+}

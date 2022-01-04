@@ -656,9 +656,17 @@ const body = document.querySelector('body');
 let EcouteSon = true;
 
 const effacer = document.querySelector(".effacer");
+const oui = document.querySelector(".oui");
 effacer.innerHTML = "<button class='reset'>Effacer ma partie</button>";
 effacer.addEventListener("click", function() {
+  document.querySelector(".menuEffacer").classList.remove("cacher");
+})
+document.querySelector(".non").addEventListener("click", function() {
+  document.querySelector(".menuEffacer").classList.add("cacher");
+})
+oui.addEventListener("click", function() {
   reset();
+  document.querySelector(".menuEffacer").classList.add("cacher");
 })
 
 const son = document.querySelector(".son");
