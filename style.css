@@ -10,679 +10,677 @@
   font-family: "Wendy One";
 }
 
-@media screen and (min-width: 100px){
-  .chapitre7 > .game{
-    background-color: rgba(15, 55, 87, 0.6);
-  }
-  
-  .chapitre7 > .game .bouton:hover{
-    background-color: rgb(173, 67, 67);
-  }
-  
-  .chapitre7 > .game > h1 {
-    color: red;
-  }
-  
-  .chapitre7 > .game .bouton{
-    background-color: rgb(148, 0, 0);
-  }
-  
-  .chapitre7 > .game .reset{
-    background-color: rgb(15, 38, 112);
-  }
-  
-  .chapitre7 > .game .reset:hover{
-    background-color: rgb(45, 69, 148);
-  }
-  
-  .chapitre7 > .blur {
-    display: block;
-    filter:blur(20px);
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    object-fit: contain;
-    z-index: -1;
-  }
-  
-  
-  body.chapitre7 {
-    background-color: black;
-  }
-  
-  .chapitre26{
-    background-color: black;
-  }
-  
-  .chapitre26 > .game {
-    background-color: rgb(63, 8, 85);
-    box-shadow: 0 0 10px 10px rgb(63, 8, 85);
-  }
-  
-  .chapitre26 > .game > h1 {
-    color: green;
-    filter: drop-shadow(30px 10px 10px black);  
-  }
-  
-  .chapitre26 > .game  .image {
-    border-radius: 3%;
-    box-shadow:  0 0 10px 5px green;
-  }
-  
-  .chapitre26 > .game .bouton{
-    filter: drop-shadow(10px 10px 10px black);
-    background-color: rgb(105, 2, 179);
-    color: rgb(0, 255, 21);
-    font-weight: 700;
-  }
-  
-  .chapitre26 > .game .bouton:hover{
-    background-color: rgb(54, 0, 92);
-  }
-  
-  .chapitre26 > .game .reset {
-    filter: drop-shadow(10px 10px 10px black);
-    background-color: rgb(105, 2, 179);
-    color: rgb(0, 255, 21);
-    font-weight: 700;
-  }
-  
-  .chapitre26 > .game .reset:hover{
-    background-color: rgb(54, 0, 92);
-  }
-  
-  .chapitre26 > .game .son{
-    color: rgb(21, 163, 33);;
-  }
-  
-  .chapitre31 {
-    background-image: url(assets/img/indice.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .chapitre31 > .game {
-    background-color: rgba(177, 130, 0, 0);
-  }
-  
-  .chapitre31 > .game > h1 {
-    color: rgb(255, 230, 1);
-    text-decoration-line: underline;
-  }
-  
-  .chapitre31 > .game > p {
-    font-style: italic;
-    font-weight: 600;
-    color: rgb(255, 230, 1);
-  }
-  
-  .chapitre31 > .game .bouton {
-    color: rgb(255, 230, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre31 > .game .reset{
-    color: rgb(255, 230, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre31 > .game .son{
-    color: rgb(255, 230, 1);
-    background-color: black;
-    width: 80px;
-    font-weight: 700;
-  }
-  
-  .chapitre47 {
-    background-color: rgb(5, 102, 5);
-  }
-  
-  .chapitre47 > .game{
-    background-color: rgb(3, 56, 3);
-    border-radius: 5%;
-  }
-  
-  .chapitre47 > .game > h1 {
-    color: green;
-  }
-  
-  .chapitre47 > .game > p {
-    color: rgb(113, 184, 113);
-  }
-  
-  .chapitre47 > .game .bouton{
-    color: rgb(127, 192, 127);
-    background-color: green;
-  }
-  
-  .chapitre47 > .game .bouton:hover{
-    background-color: rgb(26, 71, 26);
-  }
-  
-  .chapitre47 > .game .reset {
-    color: rgb(127, 192, 127);
-    background-color: green;
-  }
-  
-  .chapitre47 > .game .reset:hover{
-    background-color: rgb(26, 71, 26);
-  }
-  
-  .chapitre47 > .game .son {
-    color: rgb(127, 192, 127);
-  }
-  
-  .chapitre47 > .game  .image{
-    border-radius: 5%;
-  }
-  
-  .chapitre8 {
-    background-color: rgb(134, 2, 2);
-  }
-  
-  .chapitre8 > .game {
-    background-color: rgb(75, 2, 2);
-    border-radius: 5%;
-  }
-  
-  .chapitre8 > .game > h1 {
-    color: rgb(167, 0, 0);
-  }
-  
-  .chapitre8 > .game .bouton{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre8 > .game .bouton:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre8 > .game .reset{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre8 > .game .reset:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre8 > .game > p {
-    color: rgb(223, 63, 63);
-    font-weight: 700;
-    text-align: justify;
-  }
-  
-  .chapitre8 > .game .son {
-    color: rgb(223, 63, 63);
-  }
-  
-  .chapitre8 > .game .image {
-    border-radius: 5%;
-  }
-  
-  .chapitre18 {
-    background-color: rgb(134, 2, 2);
-  }
-  
-  .chapitre18 > .game {
-    background-color: rgb(75, 2, 2);
-    border-radius: 5%;
-  }
-  
-  .chapitre18 > .game > h1 {
-    color: rgb(167, 0, 0);
-  }
-  
-  .chapitre18 > .game .bouton{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre18 > .game .bouton:hover{
-    background-color: rgb(170, 84, 84);;
-  }
-  
-  .chapitre18 > .game .reset{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre18 > .game .reset:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre18 > .game > p {
-    color: rgb(223, 63, 63);
-    font-weight: 700;
-    text-align: justify;
-  }
-  
-  .chapitre18 > .game .son {
-    color: rgb(223, 63, 63);
-  }
-  
-  .chapitre18 > .game .image {
-    border-radius: 5%;
-  }
-  
-  .chapitre24 {
-    background-color: rgb(134, 2, 2);
-  }
-  
-  .chapitre24 > .game {
-    background-color: rgb(75, 2, 2);
-    border-radius: 5%;
-  }
-  
-  .chapitre24 > .game > h1 {
-    color: rgb(167, 0, 0);
-  }
-  
-  .chapitre24 > .game .bouton{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre24> .game .bouton:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre24 > .game .reset{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre24> .game .reset:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre24 > .game > p {
-    color: rgb(223, 63, 63);
-    font-weight: 700;
-    text-align: justify;
-  }
-  
-  .chapitre24 > .game .son {
-    color: rgb(223, 63, 63);
-  }
-  
-  .chapitre24 > .game .image {
-    border-radius: 5%;
-  }
-  
-  .chapitre30 {
-    background-color: rgb(134, 2, 2);
-  }
-  
-  .chapitre30 > .game {
-    background-color: rgb(75, 2, 2);
-    border-radius: 5%;
-  }
-  
-  .chapitre30 > .game > h1 {
-    color: rgb(167, 0, 0);
-  }
-  
-  .chapitre30 > .game .bouton{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre30> .game .bouton:hover{
-      background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre30 > .game .reset{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre30> .game .reset:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre30 > .game > p {
-    color: rgb(223, 63, 63);
-    font-weight: 700;
-    text-align: justify;
-  }
-  
-  .chapitre30 > .game .son {
-    color: rgb(223, 63, 63);
-  }
-  
-  .chapitre30 > .game .image {
-    border-radius: 5%;
-  }
-  
-  .chapitre38 {
-    background-color: rgb(134, 2, 2);
-  }
-  
-  .chapitre38 > .game {
-    background-color: rgb(75, 2, 2);
-    border-radius: 5%;
-  }
-  
-  .chapitre38 > .game > h1 {
-    color: rgb(167, 0, 0);
-  }
-  
-  .chapitre38 > .game .bouton{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre38 > .game .bouton:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre38 > .game .reset{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre38 > .game .reset:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre38 > .game > p {
-    color: rgb(223, 63, 63);
-    font-weight: 700;
-    text-align: justify;
-  }
-  
-  .chapitre38 > .game .son {
-    color: rgb(223, 63, 63);
-  }
-  
-  .chapitre38 > .game .image {
-    border-radius: 5%;
-  }
-  
-  
-  .chapitre41 {
-    background-color: rgb(134, 2, 2);
-  }
-  
-  .chapitre41 > .game {
-    background-color: rgb(75, 2, 2);
-    border-radius: 5%;
-  }
-  
-  .chapitre41 > .game > h1 {
-    color: rgb(167, 0, 0);
-  }
-  
-  .chapitre41 > .game .bouton{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre41 > .game .bouton:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre41 > .game .reset{
-    background-color: rgb(179, 3, 3);
-    color: rgb(78, 1, 1);
-    font-weight: 700;
-  }
-  
-  .chapitre41 > .game .reset:hover{
-    background-color: rgb(170, 84, 84);
-  }
-  
-  .chapitre41 > .game > p {
-    color: rgb(223, 63, 63);
-    font-weight: 700;
-    text-align: justify;
-  }
-  
-  .chapitre41 > .game .son {
-    color: rgb(223, 63, 63);
-  }
-  
-  .chapitre41 > .game .image {
-    border-radius: 5%;
-  }
-  
-  .chapitre46 {
-    background-color:rgb(31, 0, 53);
-  }
-  
-  .chapitre46 > .game {
-    background-color: rgb(63, 8, 85);
-    border-radius: 5%;
-    box-shadow: 0 0 10px 10px rgb(63, 8, 85);
-  }
-  
-  .chapitre46 > .game  .image {
-    border-radius: 3%;
-    box-shadow:  0 0 10px 5px green;
-  }
-  
-  .chapitre46 > .game .bouton{
-    filter: drop-shadow(10px 10px 10px black);
-    background-color: rgb(105, 2, 179);
-    color: rgb(0, 255, 21);
-    font-weight: 700;
-  }
-  
-  .chapitre46 > .game .bouton:hover{
-    background-color: rgb(54, 0, 92);
-  }
-  
-  .chapitre46 > .game .reset{
-    filter: drop-shadow(10px 10px 10px black);
-    background-color: rgb(105, 2, 179);
-    color: rgb(0, 255, 21);
-    font-weight: 700;
-  }
-  
-  .chapitre46 > .game .reset:hover{
-    background-color: rgb(54, 0, 92);
-  }
-  
-  .chapitre46 > .game .son{
-    color: rgb(21, 163, 33);;
-  }
-  
-  .chapitre46 > .game > h1 {
-    color: green;
-    filter: drop-shadow(30px 10px 10px black);  
-  }
-  
-  .chapitre46 > .game > p {
-    color: rgb(6, 175, 6);
-    font-weight: 700;
-    text-align: justify;
-    filter: drop-shadow(30px 10px 10px black); 
-  }
+.chapitre7 > .game{
+  background-color: rgba(15, 55, 87, 0.6);
+}
 
-  .blur {
-    display: none;
-  }
-  
-  .menuEffacer{
-    width: 300px;
-    background-color: #06332e;
-    padding: 50px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 50%
-  }
+.chapitre7 > .game .bouton:hover{
+  background-color: rgb(173, 67, 67);
+}
 
-  .textChoix{
-    font-size: 20px;
-  }
-  
-  .choix{
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .oui{
-    width: 80px;
-    background-color: #ac695d;
-    border-radius: 15px;
-    padding: 5px;
-    margin-top: 10px;
-    font-family: "Artifika";
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .oui:hover{
-    background-color: #971b05;
-  }
-  
-  .non{
-    width: 80px;
-    background-color: #ac695d;
-    border-radius: 15px;
-    padding: 5px;
-    margin-top: 10px;
-    font-family: "Artifika";
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .non:hover{
-    background-color: #971b05;
-  }
-  
-  .cacher{
-    display: none;
-  }
-  
-  .game {
-    max-width: 500px;
-    min-height: 100px;
-    max-height: 100vh;
-    background-color: #0a5c52;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    font-family: "Wendy One";
-    color: #2c1126;
-    font-size: 60px;
-  }
-  
-  p {
-    font-family: "Artifika";
-    color: #f4ebe8;
-    font-size: 20px;
-  }
-  
-  input {
-    font-family: "Artifika";
-    color: #f4ebe8;
-    font-size: 17px;
-    transform: scale(1.5);
-  }
-  
-  .bouton {
-    background-color: #ac695d;
-    border-radius: 15px;
-    padding: 5px;
-    margin-top: 10px;
-    font-family: "Artifika";
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .bouton:hover{
-    background-color: #971b05;
-  }
-  
-  body {
-    width: 100%;
-    height: 100vh;
-    background-color: #0f3757;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  img {
-    width: 100%;
-    max-width: 700px;
-    max-height: 450px;
-    object-fit: cover;
-  }
-  
-  .image {
-    overflow: hidden;
-  }
-  
-  .option {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .effacer {
-    position: relative;
-    bottom: 0;
-    left: 120px;
-  }
-  
-  .reset {
-    width: 130px;
-    background-color: #ac695d;
-    border-radius: 15px;
-    padding: 5px;
-    margin-top: 10px;
-    font-family: "Artifika";
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .reset:hover{
-    background-color: #971b05;
-  }
-  
-  .son {
-    position: relative;
-    bottom: 40px;
-    right: 150px;
-    color: #ac695d;
-    font-weight: bold;
-    font-size: 25px;
-    border-radius: 15px;
-    padding: 5px;
-    margin-top: 10px;
-    font-family: "Artifika";
-  }
-  
-  .son::after {
-    content: "Son";
-  }
+.chapitre7 > .game > h1 {
+  color: red;
+}
+
+.chapitre7 > .game .bouton{
+  background-color: rgb(148, 0, 0);
+}
+
+.chapitre7 > .game .reset{
+  background-color: rgb(15, 38, 112);
+}
+
+.chapitre7 > .game .reset:hover{
+  background-color: rgb(45, 69, 148);
+}
+
+.chapitre7 > .blur {
+  display: block;
+  filter:blur(20px);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  z-index: -1;
+}
+
+
+body.chapitre7 {
+  background-color: black;
+}
+
+.chapitre26{
+  background-color: black;
+}
+
+.chapitre26 > .game {
+  background-color: rgb(63, 8, 85);
+  box-shadow: 0 0 10px 10px rgb(63, 8, 85);
+}
+
+.chapitre26 > .game > h1 {
+  color: green;
+  filter: drop-shadow(30px 10px 10px black);  
+}
+
+.chapitre26 > .game  .image {
+  border-radius: 3%;
+  box-shadow:  0 0 10px 5px green;
+}
+
+.chapitre26 > .game .bouton{
+  filter: drop-shadow(10px 10px 10px black);
+  background-color: rgb(105, 2, 179);
+  color: rgb(0, 255, 21);
+  font-weight: 700;
+}
+
+.chapitre26 > .game .bouton:hover{
+  background-color: rgb(54, 0, 92);
+}
+
+.chapitre26 > .game .reset {
+  filter: drop-shadow(10px 10px 10px black);
+  background-color: rgb(105, 2, 179);
+  color: rgb(0, 255, 21);
+  font-weight: 700;
+}
+
+.chapitre26 > .game .reset:hover{
+  background-color: rgb(54, 0, 92);
+}
+
+.chapitre26 > .game .son{
+  color: rgb(21, 163, 33);;
+}
+
+.chapitre31 {
+  background-image: url(assets/img/indice.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chapitre31 > .game {
+  background-color: rgba(177, 130, 0, 0);
+}
+
+.chapitre31 > .game > h1 {
+  color: rgb(255, 230, 1);
+  text-decoration-line: underline;
+}
+
+.chapitre31 > .game > p {
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(255, 230, 1);
+}
+
+.chapitre31 > .game .bouton {
+  color: rgb(255, 230, 1);
+  font-weight: 700;
+}
+
+.chapitre31 > .game .reset{
+  color: rgb(255, 230, 1);
+  font-weight: 700;
+}
+
+.chapitre31 > .game .son{
+  color: rgb(255, 230, 1);
+  background-color: black;
+  width: 80px;
+  font-weight: 700;
+}
+
+.chapitre47 {
+  background-color: rgb(5, 102, 5);
+}
+
+.chapitre47 > .game{
+  background-color: rgb(3, 56, 3);
+  border-radius: 5%;
+}
+
+.chapitre47 > .game > h1 {
+  color: green;
+}
+
+.chapitre47 > .game > p {
+  color: rgb(113, 184, 113);
+}
+
+.chapitre47 > .game .bouton{
+  color: rgb(127, 192, 127);
+  background-color: green;
+}
+
+.chapitre47 > .game .bouton:hover{
+  background-color: rgb(26, 71, 26);
+}
+
+.chapitre47 > .game .reset {
+  color: rgb(127, 192, 127);
+  background-color: green;
+}
+
+.chapitre47 > .game .reset:hover{
+  background-color: rgb(26, 71, 26);
+}
+
+.chapitre47 > .game .son {
+  color: rgb(127, 192, 127);
+}
+
+.chapitre47 > .game  .image{
+  border-radius: 5%;
+}
+
+.chapitre8 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre8 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre8 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre8 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre8 > .game .bouton:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre8 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre8 > .game .reset:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre8 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre8 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre8 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre18 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre18 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre18 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre18 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre18 > .game .bouton:hover{
+  background-color: rgb(170, 84, 84);;
+}
+
+.chapitre18 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre18 > .game .reset:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre18 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre18 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre18 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre24 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre24 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre24 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre24 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre24> .game .bouton:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre24 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre24> .game .reset:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre24 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre24 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre24 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre30 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre30 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre30 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre30 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre30> .game .bouton:hover{
+    background-color: rgb(170, 84, 84);
+}
+
+.chapitre30 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre30> .game .reset:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre30 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre30 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre30 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre38 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre38 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre38 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre38 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre38 > .game .bouton:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre38 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre38 > .game .reset:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre38 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre38 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre38 > .game .image {
+  border-radius: 5%;
+}
+
+
+.chapitre41 {
+  background-color: rgb(134, 2, 2);
+}
+
+.chapitre41 > .game {
+  background-color: rgb(75, 2, 2);
+  border-radius: 5%;
+}
+
+.chapitre41 > .game > h1 {
+  color: rgb(167, 0, 0);
+}
+
+.chapitre41 > .game .bouton{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre41 > .game .bouton:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre41 > .game .reset{
+  background-color: rgb(179, 3, 3);
+  color: rgb(78, 1, 1);
+  font-weight: 700;
+}
+
+.chapitre41 > .game .reset:hover{
+  background-color: rgb(170, 84, 84);
+}
+
+.chapitre41 > .game > p {
+  color: rgb(223, 63, 63);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.chapitre41 > .game .son {
+  color: rgb(223, 63, 63);
+}
+
+.chapitre41 > .game .image {
+  border-radius: 5%;
+}
+
+.chapitre46 {
+  background-color:rgb(31, 0, 53);
+}
+
+.chapitre46 > .game {
+  background-color: rgb(63, 8, 85);
+  border-radius: 5%;
+  box-shadow: 0 0 10px 10px rgb(63, 8, 85);
+}
+
+.chapitre46 > .game  .image {
+  border-radius: 3%;
+  box-shadow:  0 0 10px 5px green;
+}
+
+.chapitre46 > .game .bouton{
+  filter: drop-shadow(10px 10px 10px black);
+  background-color: rgb(105, 2, 179);
+  color: rgb(0, 255, 21);
+  font-weight: 700;
+}
+
+.chapitre46 > .game .bouton:hover{
+  background-color: rgb(54, 0, 92);
+}
+
+.chapitre46 > .game .reset{
+  filter: drop-shadow(10px 10px 10px black);
+  background-color: rgb(105, 2, 179);
+  color: rgb(0, 255, 21);
+  font-weight: 700;
+}
+
+.chapitre46 > .game .reset:hover{
+  background-color: rgb(54, 0, 92);
+}
+
+.chapitre46 > .game .son{
+  color: rgb(21, 163, 33);;
+}
+
+.chapitre46 > .game > h1 {
+  color: green;
+  filter: drop-shadow(30px 10px 10px black);  
+}
+
+.chapitre46 > .game > p {
+  color: rgb(6, 175, 6);
+  font-weight: 700;
+  text-align: justify;
+  filter: drop-shadow(30px 10px 10px black); 
+}
+
+.blur {
+  display: none;
+}
+
+.menuEffacer{
+  width: 300px;
+  background-color: #06332e;
+  padding: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%
+}
+
+.textChoix{
+  font-size: 20px;
+}
+
+.choix{
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.oui{
+  width: 80px;
+  background-color: #ac695d;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+  color: #fff;
+  font-size: 18px;
+}
+
+.oui:hover{
+  background-color: #971b05;
+}
+
+.non{
+  width: 80px;
+  background-color: #ac695d;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+  color: #fff;
+  font-size: 18px;
+}
+
+.non:hover{
+  background-color: #971b05;
+}
+
+.cacher{
+  display: none;
+}
+
+.game {
+  max-width: 500px;
+  min-height: 100px;
+  max-height: 100vh;
+  background-color: #0a5c52;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Wendy One";
+  color: #2c1126;
+  font-size: 60px;
+}
+
+p {
+  font-family: "Artifika";
+  color: #f4ebe8;
+  font-size: 20px;
+}
+
+input {
+  font-family: "Artifika";
+  color: #f4ebe8;
+  font-size: 17px;
+  transform: scale(1.5);
+}
+
+.bouton {
+  background-color: #ac695d;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+  color: #fff;
+  font-size: 18px;
+}
+
+.bouton:hover{
+  background-color: #971b05;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0f3757;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  max-width: 700px;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.effacer {
+  position: relative;
+  bottom: 0;
+  left: 120px;
+}
+
+.reset {
+  width: 130px;
+  background-color: #ac695d;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+  color: #fff;
+  font-size: 18px;
+}
+
+.reset:hover{
+  background-color: #971b05;
+}
+
+.son {
+  position: relative;
+  bottom: 40px;
+  right: 150px;
+  color: #ac695d;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: "Artifika";
+}
+
+.son::after {
+  content: "Son";
 }
 
 @media screen and (min-width: 500px) {
