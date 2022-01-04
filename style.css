@@ -528,10 +528,22 @@ body.chapitre7 {
   top: 50%
 }
 
-.texte{
+.hidden{
   display: block;
-  max-height: 100px;
-  overflow: auto;
+  max-height: 50px;
+  border: 2px dotted rgb(0, 0, 0);
+}
+
+.hidden:hover{
+  cursor: pointer;
+}
+
+.texte:hover{
+  cursor: pointer;
+}
+
+.hidden{
+  overflow: hidden;
 }
 
 .textChoix{
