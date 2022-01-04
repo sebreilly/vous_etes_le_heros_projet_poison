@@ -1044,6 +1044,26 @@ video{
   }
 }
 @media screen and (min-width: 900px) {
+
+  .hidden{
+    display: block;
+    max-height: 50px;
+    opacity: 1;
+    background: none;
+  }
+  
+  .hidden:hover{
+    cursor: pointer;
+  }
+  
+  .texte:hover{
+    cursor: pointer;
+  }
+  
+  .hidden{
+    overflow: visible;
+  }
+
   .game {
     width: 100%;
     max-width: 900px;

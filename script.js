@@ -59,8 +59,15 @@ function reset() {
 }
 
 const hidden = document.querySelector(".hidden");
-hidden.addEventListener("click", function() {
-  hidden.classList.toggle("hidden");
+window.addEventListener("resize", function(){
+  if(window.innerWidth >= 900){
+    hidden.classList.remove("hidden");
+}else if(window.innerWidth < 900){
+  hidden.classList.add("hidden");
+  hidden.addEventListener("click", function() {
+    hidden.classList.toggle("hidden");
+  })
+}
 })
 
 let chaptersObj = {
