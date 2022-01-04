@@ -531,7 +531,8 @@ body.chapitre7 {
 .hidden{
   display: block;
   max-height: 50px;
-  border: 2px dotted rgb(0, 0, 0);
+  opacity: 0.7;
+  background-color: #000000;
 }
 
 .hidden:hover{
