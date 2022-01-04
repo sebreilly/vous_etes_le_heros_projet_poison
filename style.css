@@ -539,6 +539,10 @@ body.chapitre7 {
   cursor: pointer;
 }
 
+.texte::after{
+  content: "🔼";
+}
+
 .texte:hover{
   cursor: pointer;
 }
@@ -1057,7 +1061,11 @@ video{
   }
   
   .texte:hover{
-    cursor: pointer;
+    cursor: default;
+  }
+
+  .texte::after{
+    content: none;
   }
   
   .hidden{

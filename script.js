@@ -1,3 +1,12 @@
+
+const texte = document.querySelector(".texte");
+
+texte.addEventListener("click", function(){
+  if(window.innerWidth < 900 && titre.classList.contains("hidden") == true){
+    content.innerHTML = `<p class='content'>🔽${localStorage.getItem("chapitre")}</p>`;
+  }
+})
+
 let rocheTrouver = false; // Roche non trouvé par défaut (false)
 if (localStorage.getItem("roche") != undefined) { // Est-ce que roche est sauvegardé dans localStorage?
   rocheTrouver = localStorage.getItem("roche") == true; // Si oui, donnons la valeur à rocheTrouver de ce qu'il y a de sauvegardé.
@@ -58,17 +67,28 @@ function reset() {
   goToChapter("chapitre1");
 }
 
+const content = document.querySelector(".content");
+window.addEventListener("resize", function(){
+  if(window.innerWidth >= 900){
+    content.innerHTML = `<p class='content'></p>`
+  }
+})
+
 const hidden = document.querySelector(".hidden");
 window.addEventListener("resize", function(){
   if(window.innerWidth >= 900){
     hidden.classList.remove("hidden");
 }else if(window.innerWidth < 900){
   hidden.classList.add("hidden");
-  hidden.addEventListener("click", function() {
-    hidden.classList.toggle("hidden");
-  })
 }
 })
+
+if(window.innerWidth < 900){
+  hidden.addEventListener("click", function() {
+    hidden.classList.toggle("hidden");
+    content.innerHTML = `<p class='content'></p>`;
+  })
+}
 
 let chaptersObj = {
   chapitre1: {
@@ -685,7 +705,11 @@ const son = document.querySelector(".son");
 son.innerHTML = "<input type='checkbox' class='checkbox' name='son' checked>";
 const checkbox = document.querySelector(".checkbox");
 
+
 function goToChapter(chapterName) {
+  if(window.innerWidth < 900){
+    content.innerHTML = `<p class='content'>🔽${chapterName}</p>`;
+  }
 
   body.className = chapterName;
   if(checkbox.checked == true) {
@@ -728,9 +752,13 @@ function goToChapter(chapterName) {
   }
 }
 
+const titre = document.querySelector(".titre");
+
 if (localStorage.getItem("chapitre") != undefined){
   goToChapter(localStorage.getItem("chapitre"));
 } else {
   goToChapter("chapitre1");
 }
+
+
 
