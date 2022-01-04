@@ -580,7 +580,7 @@ body.chapitre7 {
 }
 
 .game {
-  max-width: 500px;
+  max-width: 700px;
   min-height: 100px;
   max-height: 100vh;
   background-color: #0a5c52;
@@ -636,7 +636,14 @@ body {
 
 img {
   width: 100%;
-  max-width: 700px;
+  max-width: 450px;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+video{
+  width: 100%;
+  max-width: 450px;
   max-height: 450px;
   object-fit: contain;
 }
