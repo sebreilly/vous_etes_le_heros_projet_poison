@@ -1032,6 +1032,7 @@ video{
 }
 @media screen and (min-width: 900px) {
   .game {
+    width: 100%;
     max-width: 900px;
     min-height: 100px;
     max-height: 100vh;
