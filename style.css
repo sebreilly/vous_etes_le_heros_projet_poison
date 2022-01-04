@@ -531,7 +531,7 @@ body.chapitre7 {
 .texte{
   display: block;
   max-height: 100px;
-  overflow: -moz-hidden-unscrollable;
+  overflow: auto;
 }
 
 .textChoix{
