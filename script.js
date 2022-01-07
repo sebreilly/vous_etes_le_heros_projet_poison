@@ -1,6 +1,5 @@
 
 const texte = document.querySelector(".texte");
-
 texte.addEventListener("click", function(){
   if(window.innerWidth < 900 && titre.classList.contains("hidden") == true){
     content.innerHTML = `<p class='content'>🔽${localStorage.getItem("chapitre")}</p>`;
@@ -75,6 +74,9 @@ window.addEventListener("resize", function(){
 })
 
 const hidden = document.querySelector(".hidden");
+if(window.innerWidth >= 900){
+  hidden.classList.remove("hidden");
+}
 window.addEventListener("resize", function(){
   if(window.innerWidth >= 900){
     hidden.classList.remove("hidden");
