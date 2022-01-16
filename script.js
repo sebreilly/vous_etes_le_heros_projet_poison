@@ -1,8 +1,10 @@
-
+const content = document.querySelector(".content");
 const texte = document.querySelector(".texte");
 texte.addEventListener("click", function(){
   if(window.innerWidth < 900 && titre.classList.contains("hidden") == true){
     content.innerHTML = `<p class='content'>🔽${localStorage.getItem("chapitre")}</p>`;
+  }else{
+    content.innerHTML = `<p class='content'></p>`;
   }
 })
 
@@ -66,7 +68,7 @@ function reset() {
   goToChapter("chapitre1");
 }
 
-const content = document.querySelector(".content");
+
 window.addEventListener("resize", function(){
   if(window.innerWidth >= 900){
     content.innerHTML = `<p class='content'></p>`
